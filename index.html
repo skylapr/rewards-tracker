@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Rewards Points History</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.4/chart.umd.min.js"></script>
+<style>
+  body { font-family: system-ui, sans-serif; max-width: 900px; margin: 32px auto; padding: 0 16px; color: #1a1a1a; }
+  h1 { font-size: 22px; }
+  .cards { display: flex; gap: 16px; flex-wrap: wrap; margin: 20px 0; }
+  .card { background: #f4f6f8; border-radius: 8px; padding: 16px 20px; min-width: 140px; }
+  .card .label { font-size: 12px; color: #666; }
+  .card .value { font-size: 24px; font-weight: 700; }
+  table { width: 100%; border-collapse: collapse; margin-top: 24px; font-size: 13px; }
+  th, td { text-align: left; padding: 6px 10px; border-bottom: 1px solid #eee; }
+  #error { color: #b00020; }
+
+  /* --- EDIT THESE TWO LINES to match your repo --- */
+</style>
+</head>
+<body>
+  <h1>Microsoft Rewards Points History</h1>
+  <div id="error"></div>
+  <div class="cards" id="cards"></div>
+  <canvas id="chart" height="90"></canvas>
+  <table id="table">
+    <thead><tr><th>Profile</th><th>Points</th><th>Timestamp</th></tr></thead>
+    <tbody></tbody>
+  </table>
+
+  <script>
+    // ----- EDIT THESE to match your GitHub repo -----
+    const OWNER = "YOUR_GITHUB_USERNAME";
+    const REPO = "YOUR_REPO_NAME";
+    const BRANCH = "main";
+    const PATH = "data.json";
+    // --------------------------------------------------
+
+    const RAW_URL = `https://raw.githubusercontent.com/${OWNER}/${REPO}/${BRANCH}/${PATH}`;
+
+    async function load() {
+      try {
+        const res = await fetch(RAW_URL + `?cachebust=${Date.now()}`);
+        if (!res.ok) throw new Error(`Fetch failed: ${res.status}`);
+        const data = await res.json();
+        render(data);
+      } catch (e) {
+        document.getElementById("error").textContent =
+          "Couldn't load data.json — check OWNER/REPO/BRANCH/PATH in index.html, and that the repo is public. (" + e.message + ")";
+      }
+    }
+
+    function render(data) {
+      data.sort((a, b) => new Date(a.timestamp) - new Date(b.timestamp));
+
+      // Latest balance per profile
+      const latestByProfile = {};
+      for (const row of data) latestByProfile[row.profile] = row;
+
+      const cardsEl = document.getElementById("cards");
+      let total = 0;
+      for (const [profile, row] of Object.entries(latestByProfile)) {
+        total += row.points;
+        const div = document.createElement("div");
+        div.className = "card";
+        div.innerHTML = `<div class="label">${profile}</div><div class="value">${row.points.toLocaleString()}</div>`;
+        cardsEl.appendChild(div);
+      }
+      const totalDiv = document.createElement("div");
+      totalDiv.className = "card";
+      totalDiv.innerHTML = `<div class="label">Total (latest)</div><div class="value">${total.toLocaleString()}</div>`;
+      cardsEl.appendChild(totalDiv);
+
+      // Table
+      const tbody = document.querySelector("#table tbody");
+      for (const row of data.slice().reverse()) {
+        const tr = document.createElement("tr");
+        tr.innerHTML = `<td>${row.profile}</td><td>${row.points.toLocaleString()}</td><td>${new Date(row.timestamp).toLocaleString()}</td>`;
+        tbody.appendChild(tr);
+      }
+
+      // Chart: one line per profile
+      const profiles = [...new Set(data.map(r => r.profile))];
+      const labels = [...new Set(data.map(r => r.timestamp))].sort();
+      const datasets = profiles.map((p, i) => ({
+        label: p,
+        data: labels.map(ts => {
+          const match = data.find(r => r.profile === p && r.timestamp === ts);
+          return match ? match.points : null;
+        }),
+        spanGaps: true,
+        tension: 0.25,
+      }));
+
+      new Chart(document.getElementById("chart"), {
+        type: "line",
+        data: {
+          labels: labels.map(l => new Date(l).toLocaleDateString()),
+          datasets,
+        },
+        options: { responsive: true, plugins: { legend: { display: profiles.length > 1 } } },
+      });
+    }
+
+    load();
+  </script>
+</body>
+</html>
