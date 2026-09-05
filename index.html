@@ -8,15 +8,45 @@
 <style>
   body { font-family: system-ui, sans-serif; max-width: 900px; margin: 32px auto; padding: 0 16px; color: #1a1a1a; }
   h1 { font-size: 22px; }
+  h2 { font-size: 16px; margin: 28px 0 8px; }
   .cards { display: flex; gap: 16px; flex-wrap: wrap; margin: 20px 0; }
   .card { background: #f4f6f8; border-radius: 8px; padding: 16px 20px; min-width: 140px; }
   .card .label { font-size: 12px; color: #666; }
   .card .value { font-size: 24px; font-weight: 700; }
-  table { width: 100%; border-collapse: collapse; margin-top: 24px; font-size: 13px; }
-  th, td { text-align: left; padding: 6px 10px; border-bottom: 1px solid #eee; }
   #error { color: #b00020; }
 
-  /* --- EDIT THESE TWO LINES to match your repo --- */
+  /* Updated Table Styles */
+  table { width: 100%; border-collapse: collapse; font-size: 13px; margin-bottom: 20px; }
+  th, td { text-align: left; padding: 12px 16px; border-bottom: 1px solid #eee; }
+  th { background: #fafafa; font-weight: 600; border-top: 1px solid #e3e3e3; border-bottom: 2px solid #e3e3e3; }
+  td.del { text-align: right; }
+  
+  select.timestamp-dropdown {
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 13px;
+    background-color: #fff;
+    cursor: pointer;
+  }
+  
+  .del-btn {
+    border: 1px solid #b00020; background: none; color: #b00020; cursor: pointer; font-size: 13px;
+    padding: 4px 12px; border-radius: 4px; font-weight: 600;
+  }
+  .del-btn:hover { background: #b00020; color: #fff; }
+  .del-btn:disabled { color: #ccc; border-color: #ccc; background: none; cursor: default; }
+
+  #manage-box {
+    margin-top: 40px; padding: 16px; border: 1px dashed #ccc; border-radius: 8px; background: #fcfcfc;
+  }
+  #manage-box h3 { margin-top: 0; font-size: 14px; }
+  #manage-box .hint { font-size: 12px; color: #666; margin-bottom: 10px; }
+  #manage-box input { width: 100%; max-width: 380px; padding: 8px; border: 1px solid #ccc; border-radius: 4px; }
+  #manage-status { font-size: 12px; margin-top: 8px; min-height: 16px; }
+  #manage-status.ok { color: #107c10; }
+  #manage-status.error { color: #b00020; }
 </style>
 </head>
 <body>
@@ -24,10 +54,32 @@
   <div id="error"></div>
   <div class="cards" id="cards"></div>
   <canvas id="chart" height="90"></canvas>
-  <table id="table">
-    <thead><tr><th>Profile</th><th>Points</th><th>Timestamp</th></tr></thead>
-    <tbody></tbody>
+
+  <h2>History by profile</h2>
+  <!-- New Single Table Structure -->
+  <table>
+    <thead>
+      <tr>
+        <th>Profile</th>
+        <th>Points</th>
+        <th>Timestamp</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody id="profiles-body"></tbody>
   </table>
+
+  <div id="manage-box">
+    <h3>Manage data (optional)</h3>
+    <div class="hint">
+      To delete individual readings, enter a GitHub token here (Contents: read/write on this
+      repo only). It's kept in this browser tab's memory only — never saved, never sent
+      anywhere except directly to GitHub when you click a delete button. Reload the page and
+      you'll need to re-enter it.
+    </div>
+    <input type="password" id="tokenInput" placeholder="GitHub personal access token" />
+    <div id="manage-status"></div>
+  </div>
 
   <script>
     // ----- EDIT THESE to match your GitHub repo -----
@@ -38,6 +90,19 @@
     // --------------------------------------------------
 
     const RAW_URL = `https://raw.githubusercontent.com/${OWNER}/${REPO}/${BRANCH}/${PATH}`;
+    const API_URL = `https://api.github.com/repos/${OWNER}/${REPO}/contents/${PATH}`;
+
+    let sessionToken = "";
+    document.getElementById("tokenInput").addEventListener("input", (e) => {
+      sessionToken = e.target.value.trim();
+    });
+
+    function b64DecodeUnicode(str) {
+      return decodeURIComponent(escape(atob(str.replace(/\n/g, ""))));
+    }
+    function b64EncodeUnicode(str) {
+      return btoa(unescape(encodeURIComponent(str)));
+    }
 
     async function load() {
       try {
@@ -52,15 +117,21 @@
     }
 
     function render(data) {
-      data.sort((a, b) => new Date(a.timestamp) - new Date(b.timestamp));
+      data = data.slice().sort((a, b) => new Date(a.timestamp) - new Date(b.timestamp));
 
-      // Latest balance per profile
+      // ----- Summary cards -----
       const latestByProfile = {};
-      for (const row of data) latestByProfile[row.profile] = row;
+      const firstSeenOrder = [];
+      for (const row of data) {
+        if (!(row.profile in latestByProfile)) firstSeenOrder.push(row.profile);
+        latestByProfile[row.profile] = row;
+      }
 
       const cardsEl = document.getElementById("cards");
+      cardsEl.innerHTML = "";
       let total = 0;
-      for (const [profile, row] of Object.entries(latestByProfile)) {
+      for (const profile of firstSeenOrder) {
+        const row = latestByProfile[profile];
         total += row.points;
         const div = document.createElement("div");
         div.className = "card";
@@ -72,35 +143,147 @@
       totalDiv.innerHTML = `<div class="label">Total (latest)</div><div class="value">${total.toLocaleString()}</div>`;
       cardsEl.appendChild(totalDiv);
 
-      // Table
-      const tbody = document.querySelector("#table tbody");
-      for (const row of data.slice().reverse()) {
+      // ----- Profile Table Generation -----
+      const profilesBody = document.getElementById("profiles-body");
+      profilesBody.innerHTML = "";
+      
+      for (const profile of firstSeenOrder) {
+        const rows = data.filter((r) => r.profile === profile).slice().reverse();
+
         const tr = document.createElement("tr");
-        tr.innerHTML = `<td>${row.profile}</td><td>${row.points.toLocaleString()}</td><td>${new Date(row.timestamp).toLocaleString()}</td>`;
-        tbody.appendChild(tr);
+        
+        // Profile Name
+        const tdProfile = document.createElement("td");
+        tdProfile.textContent = profile;
+        
+        // Points (Defaults to newest)
+        const tdPoints = document.createElement("td");
+        tdPoints.textContent = rows[0].points.toLocaleString();
+        
+        // Timestamp Dropdown
+        const tdTime = document.createElement("td");
+        const select = document.createElement("select");
+        select.className = "timestamp-dropdown";
+        
+        for (const row of rows) {
+          const opt = document.createElement("option");
+          opt.value = row.timestamp;
+          // Format visually like your example 13:08:56 5/9/2026
+          const dt = new Date(row.timestamp);
+          opt.textContent = `${dt.toLocaleTimeString()} ${dt.toLocaleDateString()}`;
+          opt.dataset.points = row.points; // Store points to update the cell later
+          select.appendChild(opt);
+        }
+
+        // Update points column dynamically when dropdown changes
+        select.addEventListener("change", (e) => {
+          const selectedOption = e.target.options[e.target.selectedIndex];
+          const newPoints = Number(selectedOption.dataset.points);
+          tdPoints.textContent = newPoints.toLocaleString();
+        });
+        
+        tdTime.appendChild(select);
+        
+        // Delete button
+        const tdDel = document.createElement("td");
+        tdDel.className = "del";
+        const delBtn = document.createElement("button");
+        delBtn.className = "del-btn";
+        delBtn.textContent = "D"; // Changed to D as shown in your drawing
+        delBtn.title = "Delete entire profile history";
+        
+        // Updated to delete the whole profile, not just a reading
+        delBtn.addEventListener("click", () => deleteProfile(profile, delBtn));
+        tdDel.appendChild(delBtn);
+        
+        tr.append(tdProfile, tdPoints, tdTime, tdDel);
+        profilesBody.appendChild(tr);
       }
 
-      // Chart: one line per profile
-      const profiles = [...new Set(data.map(r => r.profile))];
-      const labels = [...new Set(data.map(r => r.timestamp))].sort();
-      const datasets = profiles.map((p, i) => ({
+      // ----- Chart -----
+      const labels = [...new Set(data.map((r) => r.timestamp))].sort();
+      const datasets = firstSeenOrder.map((p) => ({
         label: p,
-        data: labels.map(ts => {
-          const match = data.find(r => r.profile === p && r.timestamp === ts);
+        data: labels.map((ts) => {
+          const match = data.find((r) => r.profile === p && r.timestamp === ts);
           return match ? match.points : null;
         }),
         spanGaps: true,
         tension: 0.25,
       }));
 
+      const existingChart = Chart.getChart("chart");
+      if (existingChart) existingChart.destroy();
       new Chart(document.getElementById("chart"), {
         type: "line",
-        data: {
-          labels: labels.map(l => new Date(l).toLocaleDateString()),
-          datasets,
-        },
-        options: { responsive: true, plugins: { legend: { display: profiles.length > 1 } } },
+        data: { labels: labels.map((l) => new Date(l).toLocaleDateString()), datasets },
+        options: { responsive: true, plugins: { legend: { display: firstSeenOrder.length > 1 } } },
       });
+    }
+
+    // Function updated to delete ALL readings associated with the profile
+    async function deleteProfile(profile, btn) {
+      if (!sessionToken) {
+        setManageStatus("Enter your GitHub token above first.", true);
+        return;
+      }
+      if (!confirm(`Are you sure you want to delete ALL history for profile "${profile}"?`)) {
+        return;
+      }
+
+      btn.disabled = true;
+      setManageStatus("Deleting profile...", false);
+
+      const headers = {
+        Authorization: `Bearer ${sessionToken}`,
+        Accept: "application/vnd.github+json",
+      };
+
+      try {
+        for (let attempt = 0; attempt < 3; attempt++) {
+          const getRes = await fetch(`${API_URL}?ref=${BRANCH}`, { headers });
+          if (!getRes.ok) throw new Error(`GET failed: ${getRes.status}`);
+          const fileData = await getRes.json();
+          const sha = fileData.sha;
+          let current = JSON.parse(b64DecodeUnicode(fileData.content));
+
+          // Filter out ALL entries where the profile matches the deleted one
+          current = current.filter((r) => r.profile !== profile);
+
+          const putRes = await fetch(API_URL, {
+            method: "PUT",
+            headers: { ...headers, "Content-Type": "application/json" },
+            body: JSON.stringify({
+              message: `Delete all readings for profile ${profile}`,
+              content: b64EncodeUnicode(JSON.stringify(current, null, 2)),
+              sha,
+              branch: BRANCH,
+            }),
+          });
+
+          if (putRes.ok) {
+            setManageStatus("Deleted \u2713 \u2014 refreshing...", false, true);
+            setTimeout(load, 800);
+            return;
+          }
+          if (putRes.status === 409) {
+            continue; // someone else updated the file in between — retry
+          }
+          const text = await putRes.text();
+          throw new Error(`PUT failed: ${putRes.status} ${text}`);
+        }
+        throw new Error("Kept conflicting with another update — try again.");
+      } catch (e) {
+        setManageStatus(`Error: ${e.message}`, true);
+      } finally {
+        btn.disabled = false;
+      }
+    }
+
+    function setManageStatus(text, isError, isOk) {
+      const el = document.getElementById("manage-status");
+      el.textContent = text;
+      el.className = isError ? "error" : isOk ? "ok" : "";
     }
 
     load();
