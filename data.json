@@ -1,1 +1,17 @@
-[]
+[
+  {
+    "profile": "Test",
+    "points": 746,
+    "timestamp": "2026-09-05T08:24:12.634Z"
+  },
+  {
+    "profile": "Test",
+    "points": 749,
+    "timestamp": "2026-09-05T08:27:00.028Z"
+  },
+  {
+    "profile": "Test",
+    "points": 767,
+    "timestamp": "2026-09-05T08:35:51.439Z"
+  }
+]
