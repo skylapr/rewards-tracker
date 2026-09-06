@@ -17,29 +17,21 @@
   .card .value.red { color: #b00020; }
   #error { color: #b00020; }
 
-  table { width: 100%; border-collapse: collapse; font-size: 14px; margin-top: 8px; }
-  th, td { text-align: left; padding: 10px 14px; border-bottom: 1px solid #eee; vertical-align: top; }
-  th:last-child, td:last-child { text-align: right; }
-
-  .ts-cell { position: relative; }
-  .ts-toggle {
-    background: none; border: none; cursor: pointer; font-size: 14px; color: #1a1a1a;
-    display: flex; align-items: center; gap: 6px; padding: 2px 0;
+  details.profile {
+    border: 1px solid #e3e3e3; border-radius: 8px; margin-bottom: 10px; overflow: hidden;
   }
-  .ts-toggle .caret { font-size: 10px; color: #666; }
-  .ts-menu {
-    position: absolute; top: 100%; left: 0; z-index: 10; background: white;
-    border: 1px solid #ddd; border-radius: 6px; box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-    min-width: 220px; margin-top: 4px; max-height: 220px; overflow-y: auto;
+  details.profile summary {
+    cursor: pointer; padding: 12px 16px; font-weight: 600; list-style: none;
+    display: flex; justify-content: space-between; align-items: center; background: #fafafa;
   }
-  .ts-menu.hidden { display: none; }
-  .ts-menu div { padding: 6px 12px; font-size: 13px; border-bottom: 1px solid #f2f2f2; white-space: nowrap; }
-  .ts-menu div:last-child { border-bottom: none; }
-  .ts-menu .pts { font-weight: 600; margin-right: 8px; }
-
+  details.profile summary::-webkit-details-marker { display: none; }
+  details.profile summary .count { font-weight: 400; color: #666; font-size: 12px; }
+  table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  th, td { text-align: left; padding: 6px 16px; border-bottom: 1px solid #eee; }
+  td.del { text-align: right; }
   .del-btn {
-    border: none; background: none; color: #b00020; cursor: pointer; font-size: 18px;
-    padding: 2px 8px; border-radius: 4px; line-height: 1;
+    border: none; background: none; color: #b00020; cursor: pointer; font-size: 13px;
+    padding: 2px 8px; border-radius: 4px;
   }
   .del-btn:hover { background: #fdecea; }
   .del-btn:disabled { color: #ccc; cursor: default; }
@@ -53,26 +45,69 @@
   #manage-status { font-size: 12px; margin-top: 8px; min-height: 16px; }
   #manage-status.ok { color: #107c10; }
   #manage-status.error { color: #b00020; }
+
+  .toolbar { display: flex; align-items: center; gap: 10px; margin: 16px 0; flex-wrap: wrap; }
+  .toolbar input[type="text"] {
+    padding: 8px 10px; border: 1px solid #ccc; border-radius: 4px; font-size: 13px; width: 180px;
+  }
+  .toolbar button {
+    padding: 8px 14px; border: 1px solid #ccc; border-radius: 4px; background: white;
+    cursor: pointer; font-size: 13px;
+  }
+  .toolbar button:hover { background: #f2f2f2; }
+  #searchStatus { font-size: 12px; color: #b00020; }
+  details.profile.flash { animation: flash-bg 1.4s ease; }
+  @keyframes flash-bg { 0% { background: #fff6d8; } 100% { background: transparent; } }
+
+  .custom-legend { display: flex; flex-wrap: wrap; gap: 14px; margin: 4px 0 10px; font-size: 12px; }
+  .legend-item { display: flex; align-items: center; gap: 6px; }
+  .legend-swatch { width: 16px; height: 12px; border-radius: 2px; cursor: pointer; flex-shrink: 0; }
+  .legend-label { cursor: pointer; }
+  .legend-item.hidden .legend-label { text-decoration: line-through; opacity: 0.5; }
+
+  .btn-available {
+    color: #107c10;
+    font-weight: 700;
+    animation: btn-available-glow 1.6s ease-in-out infinite alternate;
+  }
+  @keyframes btn-available-glow {
+    from { text-shadow: 0 0 4px rgba(16,124,16,0.5), 0 0 10px rgba(16,124,16,0.35); }
+    to { text-shadow: 0 0 10px rgba(16,124,16,1), 0 0 22px rgba(16,124,16,0.75); }
+  }
 </style>
 </head>
 <body>
   <h1>Microsoft Rewards Points History</h1>
   <div id="error"></div>
+
+  <div class="toolbar">
+    <button id="toggleCardsBtn">Hide profile boxes</button>
+    <button id="filterAvailableBtn">All</button>
+    <label for="chartType" style="font-size: 13px; color: #444;">Chart style:</label>
+    <select id="chartType">
+      <option value="line">Line</option>
+      <option value="column">Column</option>
+      <option value="bar">Bar</option>
+    </select>
+  </div>
   <div class="cards" id="cards"></div>
   <canvas id="chart" height="90"></canvas>
 
-  <h2>Profiles</h2>
-  <table>
-    <thead><tr><th>Profile</th><th>Points</th><th>Timestamp</th><th></th></tr></thead>
-    <tbody id="profileRows"></tbody>
-  </table>
+  <h2>History by profile</h2>
+  <div class="toolbar">
+    <input type="text" id="profileSearch" placeholder="Profile number, e.g. 21" />
+    <button id="profileSearchBtn">Go to profile</button>
+    <button id="toggleProfilesBtn">Hide profiles list</button>
+    <span id="searchStatus"></span>
+  </div>
+  <div id="profiles"></div>
 
   <div id="manage-box">
     <h3>Manage data (optional)</h3>
     <div class="hint">
-      To delete a profile's data, enter a GitHub token here (Contents: read/write on this
+      To delete individual readings, enter a GitHub token here (Contents: read/write on this
       repo only). It's kept in this browser tab's memory only — never saved, never sent
-      anywhere except directly to GitHub when you click delete. Reload the page and
+      anywhere except directly to GitHub when you click a delete button. Reload the page and
       you'll need to re-enter it.
     </div>
     <input type="password" id="tokenInput" placeholder="GitHub personal access token" />
@@ -80,6 +115,25 @@
   </div>
 
   <script>
+    // Glow effect for a dataset's line, toggled on/off via dataset._glow.
+    Chart.register({
+      id: "lineGlowPlugin",
+      beforeDatasetDraw(chart, args) {
+        const ds = chart.data.datasets[args.index];
+        if (ds && ds._glow) {
+          chart.ctx.save();
+          chart.ctx.shadowColor = ds.borderColor || "rgba(0,0,0,0.9)";
+          chart.ctx.shadowBlur = 40;
+        }
+      },
+      afterDatasetDraw(chart, args) {
+        const ds = chart.data.datasets[args.index];
+        if (ds && ds._glow) {
+          chart.ctx.restore();
+        }
+      },
+    });
+
     // ----- EDIT THESE to match your GitHub repo -----
     const OWNER = "skylapr";
     const REPO = "rewards-tracker";
@@ -94,6 +148,10 @@
     document.getElementById("tokenInput").addEventListener("input", (e) => {
       sessionToken = e.target.value.trim();
     });
+
+    let currentProfileOrder = [];
+    let lastData = [];
+    let cardsFiltered = false;
 
     function b64DecodeUnicode(str) {
       return decodeURIComponent(escape(atob(str.replace(/\n/g, ""))));
@@ -114,24 +172,18 @@
       }
     }
 
-    // Close any open timestamp dropdown when clicking elsewhere on the page.
-    document.addEventListener("click", (e) => {
-      if (!e.target.closest(".ts-cell")) {
-        document.querySelectorAll(".ts-menu").forEach((m) => m.classList.add("hidden"));
-      }
-    });
-
     function render(data) {
       data = data.slice().sort((a, b) => new Date(a.timestamp) - new Date(b.timestamp));
 
+      // ----- Summary cards -----
       const latestByProfile = {};
       const firstSeenOrder = [];
       for (const row of data) {
         if (!(row.profile in latestByProfile)) firstSeenOrder.push(row.profile);
         latestByProfile[row.profile] = row;
       }
+      currentProfileOrder = firstSeenOrder;
 
-      // ----- Summary cards -----
       const cardsEl = document.getElementById("cards");
       cardsEl.innerHTML = "";
       let total = 0;
@@ -149,55 +201,53 @@
       totalDiv.innerHTML = `<div class="label">Total (latest)</div><div class="value">${total.toLocaleString()}</div>`;
       cardsEl.appendChild(totalDiv);
 
-      // ----- One row per profile -----
-      const tbody = document.getElementById("profileRows");
-      tbody.innerHTML = "";
+      applyCardsFilter();
+
+      // ----- Per-profile dropdowns, newest reading first -----
+      const profilesEl = document.getElementById("profiles");
+      profilesEl.innerHTML = "";
       for (const profile of firstSeenOrder) {
-        const rows = data.filter((r) => r.profile === profile).slice().reverse(); // newest first
-        const latest = rows[0];
+        const rows = data.filter((r) => r.profile === profile).slice().reverse();
 
-        const tr = document.createElement("tr");
+        const details = document.createElement("details");
+        details.className = "profile";
+        details.id = `profile-${profile}`;
 
-        const tdProfile = document.createElement("td");
-        tdProfile.textContent = profile;
+        const summary = document.createElement("summary");
+        summary.innerHTML = `<span>${profile} — ${rows[0].points.toLocaleString()} pts</span><span class="count">${rows.length} reading(s)</span>`;
+        details.appendChild(summary);
 
-        const tdPoints = document.createElement("td");
-        tdPoints.textContent = latest.points.toLocaleString();
-
-        const tdTs = document.createElement("td");
-        tdTs.className = "ts-cell";
-        const toggle = document.createElement("button");
-        toggle.className = "ts-toggle";
-        toggle.innerHTML = `${new Date(latest.timestamp).toLocaleString()} <span class="caret">\u25be</span>`;
-        const menu = document.createElement("div");
-        menu.className = "ts-menu hidden";
-        for (const r of rows) {
-          const entry = document.createElement("div");
-          entry.innerHTML = `<span class="pts">${r.points.toLocaleString()}</span>${new Date(r.timestamp).toLocaleString()}`;
-          menu.appendChild(entry);
+        const table = document.createElement("table");
+        table.innerHTML = `<thead><tr><th>Points</th><th>Timestamp</th><th></th></tr></thead>`;
+        const tbody = document.createElement("tbody");
+        for (const row of rows) {
+          const tr = document.createElement("tr");
+          const tdPoints = document.createElement("td");
+          tdPoints.textContent = row.points.toLocaleString();
+          const tdTime = document.createElement("td");
+          tdTime.textContent = new Date(row.timestamp).toLocaleString();
+          const tdDel = document.createElement("td");
+          tdDel.className = "del";
+          const delBtn = document.createElement("button");
+          delBtn.className = "del-btn";
+          delBtn.textContent = "Delete";
+          delBtn.addEventListener("click", () => deleteEntry(profile, row.timestamp, row.points, delBtn));
+          tdDel.appendChild(delBtn);
+          tr.append(tdPoints, tdTime, tdDel);
+          tbody.appendChild(tr);
         }
-        toggle.addEventListener("click", (e) => {
-          e.stopPropagation();
-          document.querySelectorAll(".ts-menu").forEach((m) => {
-            if (m !== menu) m.classList.add("hidden");
-          });
-          menu.classList.toggle("hidden");
-        });
-        tdTs.append(toggle, menu);
-
-        const tdDel = document.createElement("td");
-        const delBtn = document.createElement("button");
-        delBtn.className = "del-btn";
-        delBtn.title = `Delete all data for ${profile}`;
-        delBtn.textContent = "\ud83d\uddd1";
-        delBtn.addEventListener("click", () => deleteProfile(profile, delBtn));
-        tdDel.appendChild(delBtn);
-
-        tr.append(tdProfile, tdPoints, tdTs, tdDel);
-        tbody.appendChild(tr);
+        table.appendChild(tbody);
+        details.appendChild(table);
+        profilesEl.appendChild(details);
       }
 
       // ----- Chart -----
+      lastData = data;
+      drawChart(data, document.getElementById("chartType").value);
+    }
+
+    function drawChart(data, style) {
+      const firstSeenOrder = currentProfileOrder;
       const labels = [...new Set(data.map((r) => r.timestamp))].sort();
       const datasets = firstSeenOrder.map((p) => ({
         label: p,
@@ -211,24 +261,106 @@
 
       const existingChart = Chart.getChart("chart");
       if (existingChart) existingChart.destroy();
+
+      // "column" = vertical bars (Chart.js default for type "bar").
+      // "bar" = horizontal bars (Chart.js "bar" type with a flipped axis).
+      const chartType = style === "line" ? "line" : "bar";
+      const indexAxis = style === "bar" ? "y" : "x";
+
       new Chart(document.getElementById("chart"), {
-        type: "line",
+        type: chartType,
         data: { labels: labels.map((l) => new Date(l).toLocaleDateString()), datasets },
-        options: { responsive: true, plugins: { legend: { display: firstSeenOrder.length > 1 } } },
+        options: {
+          indexAxis,
+          responsive: true,
+          plugins: { legend: { display: false } },
+        },
+      });
+
+      buildCustomLegend(Chart.getChart("chart"), datasets, firstSeenOrder.length > 1);
+    }
+
+    // ----- Custom legend: click the label to temporarily hide a line,
+    // click the coloured box to glow that line for 3 seconds -----
+    function buildCustomLegend(chart, datasets, show) {
+      let legendEl = document.getElementById("customLegend");
+      if (!legendEl) {
+        legendEl = document.createElement("div");
+        legendEl.id = "customLegend";
+        legendEl.className = "custom-legend";
+        document.getElementById("chart").insertAdjacentElement("beforebegin", legendEl);
+      }
+      legendEl.innerHTML = "";
+      legendEl.style.display = show ? "flex" : "none";
+      if (!show) return;
+
+      datasets.forEach((ds, i) => {
+        const item = document.createElement("div");
+        item.className = "legend-item";
+
+        const swatch = document.createElement("span");
+        swatch.className = "legend-swatch";
+        swatch.style.background = ds.borderColor || "#999";
+        swatch.title = "Glow this line";
+        swatch.addEventListener("click", () => glowDataset(chart, i));
+
+        const label = document.createElement("span");
+        label.className = "legend-label";
+        label.textContent = ds.label;
+        label.title = "Hide/show this line";
+        label.addEventListener("click", () => toggleDataset(chart, i, item));
+
+        item.append(swatch, label);
+        legendEl.appendChild(item);
       });
     }
 
-    async function deleteProfile(profile, btn) {
+    function glowDataset(chart, index) {
+      const ds = chart.data.datasets[index];
+      if (ds._glowTimeout) clearTimeout(ds._glowTimeout);
+
+      // Remember the normal sizing the first time, so repeated clicks don't compound.
+      if (ds._origBorderWidth === undefined) ds._origBorderWidth = ds.borderWidth ?? 3;
+      if (ds._origPointRadius === undefined) ds._origPointRadius = ds.pointRadius ?? 3;
+      if (ds._origHoverRadius === undefined) ds._origHoverRadius = ds.pointHoverRadius ?? 4;
+
+      ds._glow = true;
+      ds.borderWidth = ds._origBorderWidth * 3.5;
+      ds.pointRadius = ds._origPointRadius * 2.5;
+      ds.pointHoverRadius = ds._origHoverRadius * 2.5;
+      chart.update();
+
+      ds._glowTimeout = setTimeout(() => {
+        ds._glow = false;
+        ds.borderWidth = ds._origBorderWidth;
+        ds.pointRadius = ds._origPointRadius;
+        ds.pointHoverRadius = ds._origHoverRadius;
+        chart.update();
+      }, 3000);
+    }
+
+    function toggleDataset(chart, index, item) {
+      const visible = chart.isDatasetVisible(index);
+      if (visible) {
+        chart.hide(index);
+        item.classList.add("hidden");
+      } else {
+        chart.show(index);
+        item.classList.remove("hidden");
+      }
+    }
+
+    async function deleteEntry(profile, timestamp, points, btn) {
       if (!sessionToken) {
         setManageStatus("Enter your GitHub token above first.", true);
         return;
       }
-      if (!confirm(`Delete ALL data for "${profile}"? This removes its entire history, not just one reading.`)) {
+      if (!confirm(`Delete the ${points} reading for "${profile}" at ${new Date(timestamp).toLocaleString()}?`)) {
         return;
       }
 
       btn.disabled = true;
-      setManageStatus(`Deleting ${profile}...`, false);
+      setManageStatus("Deleting...", false);
 
       const headers = {
         Authorization: `Bearer ${sessionToken}`,
@@ -243,13 +375,15 @@
           const sha = fileData.sha;
           let current = JSON.parse(b64DecodeUnicode(fileData.content));
 
-          current = current.filter((r) => r.profile !== profile);
+          current = current.filter(
+            (r) => !(r.profile === profile && r.timestamp === timestamp && r.points === points)
+          );
 
           const putRes = await fetch(API_URL, {
             method: "PUT",
             headers: { ...headers, "Content-Type": "application/json" },
             body: JSON.stringify({
-              message: `Delete all data for profile ${profile}`,
+              message: `Delete reading (${profile}, ${timestamp})`,
               content: b64EncodeUnicode(JSON.stringify(current, null, 2)),
               sha,
               branch: BRANCH,
@@ -257,11 +391,13 @@
           });
 
           if (putRes.ok) {
-            setManageStatus(`Deleted ${profile} \u2713 \u2014 refreshing...`, false, true);
+            setManageStatus("Deleted \u2713 \u2014 refreshing...", false, true);
             setTimeout(load, 800);
             return;
           }
-          if (putRes.status === 409) continue; // someone else updated the file — retry
+          if (putRes.status === 409) {
+            continue; // someone else updated the file in between — retry
+          }
           const text = await putRes.text();
           throw new Error(`PUT failed: ${putRes.status} ${text}`);
         }
@@ -278,6 +414,83 @@
       el.textContent = text;
       el.className = isError ? "error" : isOk ? "ok" : "";
     }
+
+    // ----- Toggle show/hide of the top summary cards -----
+    document.getElementById("toggleCardsBtn").addEventListener("click", () => {
+      const cardsEl = document.getElementById("cards");
+      const btn = document.getElementById("toggleCardsBtn");
+      const hidden = cardsEl.style.display === "none";
+      cardsEl.style.display = hidden ? "flex" : "none";
+      btn.textContent = hidden ? "Hide profile boxes" : "Show profile boxes";
+    });
+
+    // ----- "All" / "AVAILABLE" button: keep only the green/red (coloured) boxes -----
+    document.getElementById("filterAvailableBtn").addEventListener("click", () => {
+      const btn = document.getElementById("filterAvailableBtn");
+      cardsFiltered = !cardsFiltered;
+      btn.textContent = cardsFiltered ? "AVAILABLE" : "All";
+      btn.classList.toggle("btn-available", cardsFiltered);
+      applyCardsFilter();
+    });
+
+    function applyCardsFilter() {
+      document.querySelectorAll("#cards .card").forEach((card) => {
+        if (cardsFiltered) {
+          const hasColor = card.querySelector(".value.green, .value.red");
+          card.style.display = hasColor ? "" : "none";
+        } else {
+          card.style.display = "";
+        }
+      });
+    }
+
+    // ----- Toggle show/hide of the "History by profile" list -----
+    document.getElementById("toggleProfilesBtn").addEventListener("click", () => {
+      const profilesEl = document.getElementById("profiles");
+      const btn = document.getElementById("toggleProfilesBtn");
+      const hidden = profilesEl.style.display === "none";
+      profilesEl.style.display = hidden ? "block" : "none";
+      btn.textContent = hidden ? "Hide profiles list" : "Show profiles list";
+    });
+
+    // ----- Chart style switcher -----
+    document.getElementById("chartType").addEventListener("change", (e) => {
+      drawChart(lastData, e.target.value);
+    });
+
+    // ----- Search: jump to a profile's row under the chart -----
+    function goToProfile() {
+      const statusEl = document.getElementById("searchStatus");
+      const query = document.getElementById("profileSearch").value.trim().toLowerCase();
+      statusEl.textContent = "";
+      if (!query) return;
+
+      const match = currentProfileOrder.find((p) => {
+        const lower = p.toLowerCase();
+        return lower === query || lower.startsWith(query + "-") || lower.includes(query);
+      });
+
+      if (!match) {
+        statusEl.textContent = `No profile matching "${query}" found.`;
+        return;
+      }
+
+      const el = document.getElementById(`profile-${match}`);
+      if (!el) {
+        statusEl.textContent = `Found "${match}" but couldn't scroll to it.`;
+        return;
+      }
+      el.open = true;
+      el.scrollIntoView({ behavior: "smooth", block: "center" });
+      el.classList.remove("flash");
+      void el.offsetWidth; // restart animation if clicked twice
+      el.classList.add("flash");
+    }
+
+    document.getElementById("profileSearchBtn").addEventListener("click", goToProfile);
+    document.getElementById("profileSearch").addEventListener("keydown", (e) => {
+      if (e.key === "Enter") goToProfile();
+    });
 
     load();
   </script>
