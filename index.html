@@ -13,23 +13,33 @@
   .card { background: #f4f6f8; border-radius: 8px; padding: 16px 20px; min-width: 140px; }
   .card .label { font-size: 12px; color: #666; }
   .card .value { font-size: 24px; font-weight: 700; }
+  .card .value.green { color: #107c10; }
+  .card .value.red { color: #b00020; }
   #error { color: #b00020; }
 
-  details.profile {
-    border: 1px solid #e3e3e3; border-radius: 8px; margin-bottom: 10px; overflow: hidden;
+  table { width: 100%; border-collapse: collapse; font-size: 14px; margin-top: 8px; }
+  th, td { text-align: left; padding: 10px 14px; border-bottom: 1px solid #eee; vertical-align: top; }
+  th:last-child, td:last-child { text-align: right; }
+
+  .ts-cell { position: relative; }
+  .ts-toggle {
+    background: none; border: none; cursor: pointer; font-size: 14px; color: #1a1a1a;
+    display: flex; align-items: center; gap: 6px; padding: 2px 0;
   }
-  details.profile summary {
-    cursor: pointer; padding: 12px 16px; font-weight: 600; list-style: none;
-    display: flex; justify-content: space-between; align-items: center; background: #fafafa;
+  .ts-toggle .caret { font-size: 10px; color: #666; }
+  .ts-menu {
+    position: absolute; top: 100%; left: 0; z-index: 10; background: white;
+    border: 1px solid #ddd; border-radius: 6px; box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    min-width: 220px; margin-top: 4px; max-height: 220px; overflow-y: auto;
   }
-  details.profile summary::-webkit-details-marker { display: none; }
-  details.profile summary .count { font-weight: 400; color: #666; font-size: 12px; }
-  table { width: 100%; border-collapse: collapse; font-size: 13px; }
-  th, td { text-align: left; padding: 6px 16px; border-bottom: 1px solid #eee; }
-  td.del { text-align: right; }
+  .ts-menu.hidden { display: none; }
+  .ts-menu div { padding: 6px 12px; font-size: 13px; border-bottom: 1px solid #f2f2f2; white-space: nowrap; }
+  .ts-menu div:last-child { border-bottom: none; }
+  .ts-menu .pts { font-weight: 600; margin-right: 8px; }
+
   .del-btn {
-    border: none; background: none; color: #b00020; cursor: pointer; font-size: 13px;
-    padding: 2px 8px; border-radius: 4px;
+    border: none; background: none; color: #b00020; cursor: pointer; font-size: 18px;
+    padding: 2px 8px; border-radius: 4px; line-height: 1;
   }
   .del-btn:hover { background: #fdecea; }
   .del-btn:disabled { color: #ccc; cursor: default; }
@@ -51,15 +61,18 @@
   <div class="cards" id="cards"></div>
   <canvas id="chart" height="90"></canvas>
 
-  <h2>History by profile</h2>
-  <div id="profiles"></div>
+  <h2>Profiles</h2>
+  <table>
+    <thead><tr><th>Profile</th><th>Points</th><th>Timestamp</th><th></th></tr></thead>
+    <tbody id="profileRows"></tbody>
+  </table>
 
   <div id="manage-box">
     <h3>Manage data (optional)</h3>
     <div class="hint">
-      To delete individual readings, enter a GitHub token here (Contents: read/write on this
+      To delete a profile's data, enter a GitHub token here (Contents: read/write on this
       repo only). It's kept in this browser tab's memory only — never saved, never sent
-      anywhere except directly to GitHub when you click a delete button. Reload the page and
+      anywhere except directly to GitHub when you click delete. Reload the page and
       you'll need to re-enter it.
     </div>
     <input type="password" id="tokenInput" placeholder="GitHub personal access token" />
@@ -101,10 +114,16 @@
       }
     }
 
+    // Close any open timestamp dropdown when clicking elsewhere on the page.
+    document.addEventListener("click", (e) => {
+      if (!e.target.closest(".ts-cell")) {
+        document.querySelectorAll(".ts-menu").forEach((m) => m.classList.add("hidden"));
+      }
+    });
+
     function render(data) {
       data = data.slice().sort((a, b) => new Date(a.timestamp) - new Date(b.timestamp));
 
-      // ----- Summary cards -----
       const latestByProfile = {};
       const firstSeenOrder = [];
       for (const row of data) {
@@ -112,6 +131,7 @@
         latestByProfile[row.profile] = row;
       }
 
+      // ----- Summary cards -----
       const cardsEl = document.getElementById("cards");
       cardsEl.innerHTML = "";
       let total = 0;
@@ -120,7 +140,8 @@
         total += row.points;
         const div = document.createElement("div");
         div.className = "card";
-        div.innerHTML = `<div class="label">${profile}</div><div class="value">${row.points.toLocaleString()}</div>`;
+        const colorClass = row.points > 13400 ? "red" : row.points >= 5460 ? "green" : "";
+        div.innerHTML = `<div class="label">${profile}</div><div class="value ${colorClass}">${row.points.toLocaleString()}</div>`;
         cardsEl.appendChild(div);
       }
       const totalDiv = document.createElement("div");
@@ -128,41 +149,52 @@
       totalDiv.innerHTML = `<div class="label">Total (latest)</div><div class="value">${total.toLocaleString()}</div>`;
       cardsEl.appendChild(totalDiv);
 
-      // ----- Per-profile dropdowns, newest reading first -----
-      const profilesEl = document.getElementById("profiles");
-      profilesEl.innerHTML = "";
+      // ----- One row per profile -----
+      const tbody = document.getElementById("profileRows");
+      tbody.innerHTML = "";
       for (const profile of firstSeenOrder) {
-        const rows = data.filter((r) => r.profile === profile).slice().reverse();
+        const rows = data.filter((r) => r.profile === profile).slice().reverse(); // newest first
+        const latest = rows[0];
 
-        const details = document.createElement("details");
-        details.className = "profile";
+        const tr = document.createElement("tr");
 
-        const summary = document.createElement("summary");
-        summary.innerHTML = `<span>${profile} — ${rows[0].points.toLocaleString()} pts</span><span class="count">${rows.length} reading(s)</span>`;
-        details.appendChild(summary);
+        const tdProfile = document.createElement("td");
+        tdProfile.textContent = profile;
 
-        const table = document.createElement("table");
-        table.innerHTML = `<thead><tr><th>Points</th><th>Timestamp</th><th></th></tr></thead>`;
-        const tbody = document.createElement("tbody");
-        for (const row of rows) {
-          const tr = document.createElement("tr");
-          const tdPoints = document.createElement("td");
-          tdPoints.textContent = row.points.toLocaleString();
-          const tdTime = document.createElement("td");
-          tdTime.textContent = new Date(row.timestamp).toLocaleString();
-          const tdDel = document.createElement("td");
-          tdDel.className = "del";
-          const delBtn = document.createElement("button");
-          delBtn.className = "del-btn";
-          delBtn.textContent = "Delete";
-          delBtn.addEventListener("click", () => deleteEntry(profile, row.timestamp, row.points, delBtn));
-          tdDel.appendChild(delBtn);
-          tr.append(tdPoints, tdTime, tdDel);
-          tbody.appendChild(tr);
+        const tdPoints = document.createElement("td");
+        tdPoints.textContent = latest.points.toLocaleString();
+
+        const tdTs = document.createElement("td");
+        tdTs.className = "ts-cell";
+        const toggle = document.createElement("button");
+        toggle.className = "ts-toggle";
+        toggle.innerHTML = `${new Date(latest.timestamp).toLocaleString()} <span class="caret">\u25be</span>`;
+        const menu = document.createElement("div");
+        menu.className = "ts-menu hidden";
+        for (const r of rows) {
+          const entry = document.createElement("div");
+          entry.innerHTML = `<span class="pts">${r.points.toLocaleString()}</span>${new Date(r.timestamp).toLocaleString()}`;
+          menu.appendChild(entry);
         }
-        table.appendChild(tbody);
-        details.appendChild(table);
-        profilesEl.appendChild(details);
+        toggle.addEventListener("click", (e) => {
+          e.stopPropagation();
+          document.querySelectorAll(".ts-menu").forEach((m) => {
+            if (m !== menu) m.classList.add("hidden");
+          });
+          menu.classList.toggle("hidden");
+        });
+        tdTs.append(toggle, menu);
+
+        const tdDel = document.createElement("td");
+        const delBtn = document.createElement("button");
+        delBtn.className = "del-btn";
+        delBtn.title = `Delete all data for ${profile}`;
+        delBtn.textContent = "\ud83d\uddd1";
+        delBtn.addEventListener("click", () => deleteProfile(profile, delBtn));
+        tdDel.appendChild(delBtn);
+
+        tr.append(tdProfile, tdPoints, tdTs, tdDel);
+        tbody.appendChild(tr);
       }
 
       // ----- Chart -----
@@ -186,17 +218,17 @@
       });
     }
 
-    async function deleteEntry(profile, timestamp, points, btn) {
+    async function deleteProfile(profile, btn) {
       if (!sessionToken) {
         setManageStatus("Enter your GitHub token above first.", true);
         return;
       }
-      if (!confirm(`Delete the ${points} reading for "${profile}" at ${new Date(timestamp).toLocaleString()}?`)) {
+      if (!confirm(`Delete ALL data for "${profile}"? This removes its entire history, not just one reading.`)) {
         return;
       }
 
       btn.disabled = true;
-      setManageStatus("Deleting...", false);
+      setManageStatus(`Deleting ${profile}...`, false);
 
       const headers = {
         Authorization: `Bearer ${sessionToken}`,
@@ -211,15 +243,13 @@
           const sha = fileData.sha;
           let current = JSON.parse(b64DecodeUnicode(fileData.content));
 
-          current = current.filter(
-            (r) => !(r.profile === profile && r.timestamp === timestamp && r.points === points)
-          );
+          current = current.filter((r) => r.profile !== profile);
 
           const putRes = await fetch(API_URL, {
             method: "PUT",
             headers: { ...headers, "Content-Type": "application/json" },
             body: JSON.stringify({
-              message: `Delete reading (${profile}, ${timestamp})`,
+              message: `Delete all data for profile ${profile}`,
               content: b64EncodeUnicode(JSON.stringify(current, null, 2)),
               sha,
               branch: BRANCH,
@@ -227,13 +257,11 @@
           });
 
           if (putRes.ok) {
-            setManageStatus("Deleted \u2713 \u2014 refreshing...", false, true);
+            setManageStatus(`Deleted ${profile} \u2713 \u2014 refreshing...`, false, true);
             setTimeout(load, 800);
             return;
           }
-          if (putRes.status === 409) {
-            continue; // someone else updated the file in between — retry
-          }
+          if (putRes.status === 409) continue; // someone else updated the file — retry
           const text = await putRes.text();
           throw new Error(`PUT failed: ${putRes.status} ${text}`);
         }
