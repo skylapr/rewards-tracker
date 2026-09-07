@@ -285,6 +285,11 @@
     "timestamp": "2026-09-06T15:44:04.904Z"
   },
   {
+    "profile": "12-TH4F",
+    "points": 6688,
+    "timestamp": "2026-09-06T15:44:15.933Z"
+  },
+  {
     "profile": "24-CA83",
     "points": 4712,
     "timestamp": "2026-09-06T15:44:30.902Z"
@@ -423,5 +428,10 @@
     "profile": "9-RO25",
     "points": 6647,
     "timestamp": "2026-09-07T10:12:54.882Z"
+  },
+  {
+    "profile": "12-TH4F",
+    "points": 6688,
+    "timestamp": "2026-09-07T10:12:57.902Z"
   }
 ]
