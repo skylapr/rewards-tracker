@@ -33,6 +33,7 @@
   }
   .del-profile-btn:hover { background: #fdecea; }
   .del-profile-btn:disabled { color: #ccc; cursor: default; }
+  .profile-select-cb { width: 15px; height: 15px; cursor: pointer; margin: 0; }
   table { width: 100%; border-collapse: collapse; font-size: 13px; }
   th, td { text-align: left; padding: 6px 16px; border-bottom: 1px solid #eee; }
   td.del { text-align: right; }
@@ -106,6 +107,7 @@
     <input type="text" id="profileSearch" placeholder="Profile number, e.g. 21" />
     <button id="profileSearchBtn">Go to profile</button>
     <button id="toggleProfilesBtn">Hide profiles list</button>
+    <button id="deleteSelectedBtn" disabled>Delete selected (0)</button>
     <span id="searchStatus"></span>
   </div>
   <div id="profiles"></div>
@@ -160,6 +162,13 @@
     let currentProfileOrder = [];
     let lastData = [];
     let cardsFiltered = false;
+    let selectedProfiles = new Set();
+
+    function updateDeleteSelectedBtn() {
+      const btn = document.getElementById("deleteSelectedBtn");
+      btn.textContent = `Delete selected (${selectedProfiles.size})`;
+      btn.disabled = selectedProfiles.size === 0;
+    }
 
     function profileNumber(profile) {
       const m = String(profile).match(/^\d+/);
@@ -210,6 +219,7 @@
         return String(a).localeCompare(String(b));
       });
       currentProfileOrder = firstSeenOrder;
+      selectedProfiles = new Set([...selectedProfiles].filter((p) => firstSeenOrder.includes(p)));
 
       const cardsEl = document.getElementById("cards");
       cardsEl.innerHTML = "";
@@ -247,6 +257,20 @@
         const countSpan = document.createElement("span");
         countSpan.className = "count";
         countSpan.textContent = `${rows.length} reading(s)`;
+        const selectCb = document.createElement("input");
+        selectCb.type = "checkbox";
+        selectCb.className = "profile-select-cb";
+        selectCb.title = "Select for bulk delete";
+        selectCb.checked = selectedProfiles.has(profile);
+        selectCb.addEventListener("click", (e) => {
+          e.preventDefault();
+          e.stopPropagation();
+        });
+        selectCb.addEventListener("change", () => {
+          if (selectCb.checked) selectedProfiles.add(profile);
+          else selectedProfiles.delete(profile);
+          updateDeleteSelectedBtn();
+        });
         const delProfileBtn = document.createElement("button");
         delProfileBtn.className = "del-profile-btn";
         delProfileBtn.textContent = "Delete profile";
@@ -255,7 +279,7 @@
           e.stopPropagation();
           deleteProfile(profile, delProfileBtn);
         });
-        summaryRight.append(countSpan, delProfileBtn);
+        summaryRight.append(countSpan, selectCb, delProfileBtn);
         summary.appendChild(summaryRight);
         details.appendChild(summary);
 
@@ -282,6 +306,8 @@
         details.appendChild(table);
         profilesEl.appendChild(details);
       }
+
+      updateDeleteSelectedBtn();
 
       // ----- Chart -----
       lastData = data;
@@ -507,6 +533,74 @@
         btn.disabled = false;
       }
     }
+
+    async function deleteSelectedProfiles(btn) {
+      if (!sessionToken) {
+        setManageStatus("Enter your GitHub token above first.", true);
+        return;
+      }
+      const profiles = Array.from(selectedProfiles);
+      if (profiles.length === 0) return;
+      if (!confirm(`Delete these ${profiles.length} ENTIRE profile(s) and all of their readings? This cannot be undone.\n\n${profiles.join(", ")}`)) {
+        return;
+      }
+
+      btn.disabled = true;
+      const originalText = btn.textContent;
+      btn.textContent = "Deleting...";
+      setManageStatus(`Deleting ${profiles.length} profile(s)...`, false);
+
+      const headers = {
+        Authorization: `Bearer ${sessionToken}`,
+        Accept: "application/vnd.github+json",
+      };
+
+      try {
+        for (let attempt = 0; attempt < 3; attempt++) {
+          const getRes = await fetch(`${API_URL}?ref=${BRANCH}`, { headers });
+          if (!getRes.ok) throw new Error(`GET failed: ${getRes.status}`);
+          const fileData = await getRes.json();
+          const sha = fileData.sha;
+          let current = JSON.parse(b64DecodeUnicode(fileData.content));
+
+          current = current.filter((r) => !profiles.includes(r.profile));
+
+          const putRes = await fetch(API_URL, {
+            method: "PUT",
+            headers: { ...headers, "Content-Type": "application/json" },
+            body: JSON.stringify({
+              message: `Delete profiles (${profiles.join(", ")})`,
+              content: b64EncodeUnicode(JSON.stringify(current, null, 2)),
+              sha,
+              branch: BRANCH,
+            }),
+          });
+
+          if (putRes.ok) {
+            selectedProfiles.clear();
+            setManageStatus("Profiles deleted \u2713 \u2014 refreshing...", false, true);
+            setTimeout(load, 800);
+            return;
+          }
+          if (putRes.status === 409) {
+            continue; // someone else updated the file in between — retry
+          }
+          const text = await putRes.text();
+          throw new Error(`PUT failed: ${putRes.status} ${text}`);
+        }
+        throw new Error("Kept conflicting with another update — try again.");
+      } catch (e) {
+        setManageStatus(`Error: ${e.message}`, true);
+      } finally {
+        btn.disabled = false;
+        btn.textContent = originalText;
+        updateDeleteSelectedBtn();
+      }
+    }
+
+    document.getElementById("deleteSelectedBtn").addEventListener("click", (e) => {
+      deleteSelectedProfiles(e.currentTarget);
+    });
 
     function setManageStatus(text, isError, isOk) {
       const el = document.getElementById("manage-status");
