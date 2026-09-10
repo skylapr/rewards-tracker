@@ -1005,39 +1005,19 @@
     "timestamp": "2026-09-09T07:39:46.240Z"
   },
   {
-    "profile": "26",
-    "points": 656,
-    "timestamp": "2026-09-09T11:19:23.010Z"
-  },
-  {
     "profile": "26-JE03",
     "points": 656,
     "timestamp": "2026-09-09T11:19:23.010Z"
   },
   {
-    "profile": "26",
-    "points": 949,
-    "timestamp": "2026-09-09T11:19:32.536Z"
-  },
-  {
     "profile": "26-JE03",
     "points": 949,
     "timestamp": "2026-09-09T11:19:32.536Z"
-  },
-  {
-    "profile": "27",
-    "points": 353,
-    "timestamp": "2026-09-09T11:24:12.632Z"
   },
   {
     "profile": "27-LA86",
     "points": 353,
     "timestamp": "2026-09-09T11:24:12.632Z"
-  },
-  {
-    "profile": "27",
-    "points": 366,
-    "timestamp": "2026-09-09T11:24:15.608Z"
   },
   {
     "profile": "27-LA86",
@@ -1053,11 +1033,6 @@
     "profile": "17-TH5F",
     "points": 5886,
     "timestamp": "2026-09-09T11:36:01.069Z"
-  },
-  {
-    "profile": "27",
-    "points": 367,
-    "timestamp": "2026-09-09T11:36:02.921Z"
   },
   {
     "profile": "27-LA86",
@@ -1163,11 +1138,6 @@
     "profile": "19-TLG4",
     "points": 4635,
     "timestamp": "2026-09-09T11:39:47.086Z"
-  },
-  {
-    "profile": "26",
-    "points": 982,
-    "timestamp": "2026-09-09T11:40:00.297Z"
   },
   {
     "profile": "26-JE03",
@@ -1350,29 +1320,14 @@
     "timestamp": "2026-09-10T05:40:32.230Z"
   },
   {
-    "profile": "26",
-    "points": 1081,
-    "timestamp": "2026-09-10T07:59:16.904Z"
-  },
-  {
     "profile": "26-JE03",
     "points": 1081,
     "timestamp": "2026-09-10T07:59:16.904Z"
   },
   {
-    "profile": "26",
-    "points": 1124,
-    "timestamp": "2026-09-10T08:07:30.363Z"
-  },
-  {
     "profile": "26-JE03",
     "points": 1124,
     "timestamp": "2026-09-10T08:07:30.363Z"
-  },
-  {
-    "profile": "27",
-    "points": 387,
-    "timestamp": "2026-09-10T08:07:44.230Z"
   },
   {
     "profile": "27-LA86",
@@ -1383,11 +1338,6 @@
     "profile": "25-JO70",
     "points": 398,
     "timestamp": "2026-09-10T08:08:00.765Z"
-  },
-  {
-    "profile": "28",
-    "points": 369,
-    "timestamp": "2026-09-10T08:10:14.349Z"
   },
   {
     "profile": "28-SH15",
@@ -1403,11 +1353,6 @@
     "profile": "24-SA11",
     "points": 369,
     "timestamp": "2026-09-10T08:17:04.535Z"
-  },
-  {
-    "profile": "25",
-    "points": 372,
-    "timestamp": "2026-09-10T12:48:17.640Z"
   },
   {
     "profile": "24-SA11",
