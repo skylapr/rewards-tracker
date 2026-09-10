@@ -90,6 +90,7 @@
   <div class="toolbar">
     <button id="toggleCardsBtn">Hide profile boxes</button>
     <button id="filterAvailableBtn">All</button>
+    <button id="refreshBtn">Refresh data</button>
     <label for="chartType" style="font-size: 13px; color: #444;">Chart style:</label>
     <select id="chartType">
       <option value="line">Line</option>
@@ -178,6 +179,15 @@
         if (!res.ok) throw new Error(`Fetch failed: ${res.status}`);
         const data = await res.json();
         render(data);
+        document.getElementById("error").textContent = "";
+
+        // If a delete action left "...refreshing..." on screen, resolve it now that
+        // the reload has actually completed, instead of leaving it stuck forever.
+        const statusEl = document.getElementById("manage-status");
+        if (statusEl.textContent.includes("refreshing")) {
+          setManageStatus("Refreshed \u2713", false, true);
+          setTimeout(() => setManageStatus("", false), 2500);
+        }
       } catch (e) {
         document.getElementById("error").textContent =
           "Couldn't load data.json — check OWNER/REPO/BRANCH/PATH in index.html, and that the repo is public. (" + e.message + ")";
@@ -532,6 +542,17 @@
         }
       });
     }
+
+    // ----- Manual refresh button: force a reload of data.json right now -----
+    document.getElementById("refreshBtn").addEventListener("click", async () => {
+      const btn = document.getElementById("refreshBtn");
+      const original = btn.textContent;
+      btn.disabled = true;
+      btn.textContent = "Refreshing...";
+      await load();
+      btn.textContent = original;
+      btn.disabled = false;
+    });
 
     // ----- Toggle show/hide of the "History by profile" list -----
     document.getElementById("toggleProfilesBtn").addEventListener("click", () => {
