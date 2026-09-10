@@ -263,7 +263,6 @@
         selectCb.title = "Select for bulk delete";
         selectCb.checked = selectedProfiles.has(profile);
         selectCb.addEventListener("click", (e) => {
-          e.preventDefault();
           e.stopPropagation();
         });
         selectCb.addEventListener("change", () => {
