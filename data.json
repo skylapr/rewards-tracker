@@ -1415,7 +1415,17 @@
     "timestamp": "2026-09-10T08:17:04.535Z"
   },
   {
+    "profile": "24-SA11",
+    "points": 369,
+    "timestamp": "2026-09-10T08:17:04.535Z"
+  },
+  {
     "profile": "25",
+    "points": 372,
+    "timestamp": "2026-09-10T12:48:17.640Z"
+  },
+  {
+    "profile": "24-SA11",
     "points": 372,
     "timestamp": "2026-09-10T12:48:17.640Z"
   },
@@ -1538,5 +1548,10 @@
     "profile": "15-PH45",
     "points": 7511,
     "timestamp": "2026-09-10T12:51:07.641Z"
+  },
+  {
+    "profile": "24-SA11",
+    "points": 374,
+    "timestamp": "2026-09-10T13:29:09.745Z"
   }
 ]
