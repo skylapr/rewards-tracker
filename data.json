@@ -1355,6 +1355,11 @@
     "timestamp": "2026-09-10T08:14:05.769Z"
   },
   {
+    "profile": "25-KY75",
+    "points": 368,
+    "timestamp": "2026-09-10T08:14:05.769Z"
+  },
+  {
     "profile": "24-SA11",
     "points": 369,
     "timestamp": "2026-09-10T08:17:04.535Z"
@@ -1520,8 +1525,18 @@
     "timestamp": "2026-09-10T13:29:26.755Z"
   },
   {
+    "profile": "25-KY75",
+    "points": 368,
+    "timestamp": "2026-09-10T13:29:26.755Z"
+  },
+  {
     "profile": "23-SH15",
     "points": 372,
     "timestamp": "2026-09-10T15:31:19.454Z"
+  },
+  {
+    "profile": "25-KY75",
+    "points": 369,
+    "timestamp": "2026-09-10T15:31:55.920Z"
   }
 ]
