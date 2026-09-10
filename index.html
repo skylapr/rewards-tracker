@@ -27,6 +27,7 @@
   details.profile summary::-webkit-details-marker { display: none; }
   details.profile summary .count { font-weight: 400; color: #666; font-size: 12px; }
   details.profile summary .summary-right { display: flex; align-items: center; gap: 10px; }
+  details.profile summary .daily-points { font-weight: 700; color: #f2c200; font-size: 12px; }
   .del-profile-btn {
     border: none; background: none; color: #b00020; cursor: pointer; font-size: 12px;
     padding: 2px 8px; border-radius: 4px;
@@ -254,6 +255,29 @@
         summary.innerHTML = `<span>${profile} — ${rows[0].points.toLocaleString()} pts</span>`;
         const summaryRight = document.createElement("span");
         summaryRight.className = "summary-right";
+
+        // ----- Points claimed today: sum of positive jumps between consecutive
+        // readings whose later timestamp falls on today's local date. Resets
+        // itself automatically once the date changes, since nothing from a
+        // past day is ever included. -----
+        const rowsAsc = data.filter((r) => r.profile === profile);
+        const now = new Date();
+        let todayPoints = 0;
+        for (let i = 1; i < rowsAsc.length; i++) {
+          const ts = new Date(rowsAsc[i].timestamp);
+          const sameDay =
+            ts.getFullYear() === now.getFullYear() &&
+            ts.getMonth() === now.getMonth() &&
+            ts.getDate() === now.getDate();
+          if (sameDay) {
+            const delta = rowsAsc[i].points - rowsAsc[i - 1].points;
+            if (delta > 0) todayPoints += delta;
+          }
+        }
+        const dailyPointsSpan = document.createElement("span");
+        dailyPointsSpan.className = "daily-points";
+        dailyPointsSpan.textContent = `${now.getMonth() + 1}/${now.getDate()}-${todayPoints}pts`;
+
         const countSpan = document.createElement("span");
         countSpan.className = "count";
         countSpan.textContent = `${rows.length} reading(s)`;
@@ -278,7 +302,7 @@
           e.stopPropagation();
           deleteProfile(profile, delProfileBtn);
         });
-        summaryRight.append(countSpan, selectCb, delProfileBtn);
+        summaryRight.append(dailyPointsSpan, countSpan, selectCb, delProfileBtn);
         summary.appendChild(summaryRight);
         details.appendChild(summary);
 
