@@ -26,6 +26,13 @@
   }
   details.profile summary::-webkit-details-marker { display: none; }
   details.profile summary .count { font-weight: 400; color: #666; font-size: 12px; }
+  details.profile summary .summary-right { display: flex; align-items: center; gap: 10px; }
+  .del-profile-btn {
+    border: none; background: none; color: #b00020; cursor: pointer; font-size: 12px;
+    padding: 2px 8px; border-radius: 4px;
+  }
+  .del-profile-btn:hover { background: #fdecea; }
+  .del-profile-btn:disabled { color: #ccc; cursor: default; }
   table { width: 100%; border-collapse: collapse; font-size: 13px; }
   th, td { text-align: left; padding: 6px 16px; border-bottom: 1px solid #eee; }
   td.del { text-align: right; }
@@ -153,6 +160,11 @@
     let lastData = [];
     let cardsFiltered = false;
 
+    function profileNumber(profile) {
+      const m = String(profile).match(/^\d+/);
+      return m ? parseInt(m[0], 10) : Infinity;
+    }
+
     function b64DecodeUnicode(str) {
       return decodeURIComponent(escape(atob(str.replace(/\n/g, ""))));
     }
@@ -182,6 +194,11 @@
         if (!(row.profile in latestByProfile)) firstSeenOrder.push(row.profile);
         latestByProfile[row.profile] = row;
       }
+      firstSeenOrder.sort((a, b) => {
+        const na = profileNumber(a), nb = profileNumber(b);
+        if (na !== nb) return na - nb;
+        return String(a).localeCompare(String(b));
+      });
       currentProfileOrder = firstSeenOrder;
 
       const cardsEl = document.getElementById("cards");
@@ -214,7 +231,22 @@
         details.id = `profile-${profile}`;
 
         const summary = document.createElement("summary");
-        summary.innerHTML = `<span>${profile} — ${rows[0].points.toLocaleString()} pts</span><span class="count">${rows.length} reading(s)</span>`;
+        summary.innerHTML = `<span>${profile} — ${rows[0].points.toLocaleString()} pts</span>`;
+        const summaryRight = document.createElement("span");
+        summaryRight.className = "summary-right";
+        const countSpan = document.createElement("span");
+        countSpan.className = "count";
+        countSpan.textContent = `${rows.length} reading(s)`;
+        const delProfileBtn = document.createElement("button");
+        delProfileBtn.className = "del-profile-btn";
+        delProfileBtn.textContent = "Delete profile";
+        delProfileBtn.addEventListener("click", (e) => {
+          e.preventDefault();
+          e.stopPropagation();
+          deleteProfile(profile, delProfileBtn);
+        });
+        summaryRight.append(countSpan, delProfileBtn);
+        summary.appendChild(summaryRight);
         details.appendChild(summary);
 
         const table = document.createElement("table");
@@ -392,6 +424,63 @@
 
           if (putRes.ok) {
             setManageStatus("Deleted \u2713 \u2014 refreshing...", false, true);
+            setTimeout(load, 800);
+            return;
+          }
+          if (putRes.status === 409) {
+            continue; // someone else updated the file in between — retry
+          }
+          const text = await putRes.text();
+          throw new Error(`PUT failed: ${putRes.status} ${text}`);
+        }
+        throw new Error("Kept conflicting with another update — try again.");
+      } catch (e) {
+        setManageStatus(`Error: ${e.message}`, true);
+      } finally {
+        btn.disabled = false;
+      }
+    }
+
+    async function deleteProfile(profile, btn) {
+      if (!sessionToken) {
+        setManageStatus("Enter your GitHub token above first.", true);
+        return;
+      }
+      if (!confirm(`Delete the ENTIRE profile "${profile}" and all of its readings? This cannot be undone.`)) {
+        return;
+      }
+
+      btn.disabled = true;
+      setManageStatus("Deleting profile...", false);
+
+      const headers = {
+        Authorization: `Bearer ${sessionToken}`,
+        Accept: "application/vnd.github+json",
+      };
+
+      try {
+        for (let attempt = 0; attempt < 3; attempt++) {
+          const getRes = await fetch(`${API_URL}?ref=${BRANCH}`, { headers });
+          if (!getRes.ok) throw new Error(`GET failed: ${getRes.status}`);
+          const fileData = await getRes.json();
+          const sha = fileData.sha;
+          let current = JSON.parse(b64DecodeUnicode(fileData.content));
+
+          current = current.filter((r) => r.profile !== profile);
+
+          const putRes = await fetch(API_URL, {
+            method: "PUT",
+            headers: { ...headers, "Content-Type": "application/json" },
+            body: JSON.stringify({
+              message: `Delete profile (${profile})`,
+              content: b64EncodeUnicode(JSON.stringify(current, null, 2)),
+              sha,
+              branch: BRANCH,
+            }),
+          });
+
+          if (putRes.ok) {
+            setManageStatus("Profile deleted \u2713 \u2014 refreshing...", false, true);
             setTimeout(load, 800);
             return;
           }
