@@ -2095,6 +2095,11 @@
     "timestamp": "2026-09-12T15:31:00.513Z"
   },
   {
+    "profile": "17-TH5F",
+    "points": 1535,
+    "timestamp": "2026-09-12T15:31:03.989Z"
+  },
+  {
     "profile": "18-DU44",
     "points": 4725,
     "timestamp": "2026-09-12T15:31:26.858Z"
@@ -2458,5 +2463,10 @@
     "profile": "26-JE03",
     "points": 2729,
     "timestamp": "2026-09-13T05:44:33.307Z"
+  },
+  {
+    "profile": "17-TH5F",
+    "points": 1535,
+    "timestamp": "2026-09-13T05:44:41.599Z"
   }
 ]
