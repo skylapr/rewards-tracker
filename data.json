@@ -1995,6 +1995,11 @@
     "timestamp": "2026-09-12T15:24:29.793Z"
   },
   {
+    "profile": "8-SITO",
+    "points": 3348,
+    "timestamp": "2026-09-12T15:24:36.071Z"
+  },
+  {
     "profile": "9-RO25",
     "points": 1894,
     "timestamp": "2026-09-12T15:25:51.980Z"
@@ -2203,5 +2208,10 @@
     "profile": "27-LA86",
     "points": 672,
     "timestamp": "2026-09-12T15:36:07.819Z"
+  },
+  {
+    "profile": "8-SITO",
+    "points": 3348,
+    "timestamp": "2026-09-13T02:38:57.785Z"
   }
 ]
