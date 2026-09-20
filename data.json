@@ -55,11 +55,6 @@
     "timestamp": "2026-09-05T12:01:14.447Z"
   },
   {
-    "profile": "13-LE69",
-    "points": 1937,
-    "timestamp": "2026-09-05T12:20:58.057Z"
-  },
-  {
     "profile": "14-XU11",
     "points": 984,
     "timestamp": "2026-09-05T12:21:55.375Z"
@@ -88,36 +83,6 @@
     "profile": "17-TH5F",
     "points": 5565,
     "timestamp": "2026-09-05T12:26:15.032Z"
-  },
-  {
-    "profile": "18-DU44",
-    "points": 3593,
-    "timestamp": "2026-09-05T12:27:29.893Z"
-  },
-  {
-    "profile": "18-DU44",
-    "points": 3638,
-    "timestamp": "2026-09-05T12:27:35.872Z"
-  },
-  {
-    "profile": "19-TLG4",
-    "points": 3118,
-    "timestamp": "2026-09-05T12:28:16.755Z"
-  },
-  {
-    "profile": "19-TLG4",
-    "points": 3164,
-    "timestamp": "2026-09-05T12:28:19.727Z"
-  },
-  {
-    "profile": "20-TH27",
-    "points": 4555,
-    "timestamp": "2026-09-05T12:28:56.497Z"
-  },
-  {
-    "profile": "20-TH27",
-    "points": 4586,
-    "timestamp": "2026-09-05T12:28:59.735Z"
   },
   {
     "profile": "21-CC32",
@@ -190,21 +155,6 @@
     "timestamp": "2026-09-06T15:42:00.846Z"
   },
   {
-    "profile": "13-LE69",
-    "points": 1937,
-    "timestamp": "2026-09-06T15:42:44.928Z"
-  },
-  {
-    "profile": "18-DU44",
-    "points": 3638,
-    "timestamp": "2026-09-06T15:43:03.218Z"
-  },
-  {
-    "profile": "18-DU44",
-    "points": 3658,
-    "timestamp": "2026-09-06T15:43:05.862Z"
-  },
-  {
     "profile": "22-BM82",
     "points": 6041,
     "timestamp": "2026-09-06T15:43:13.909Z"
@@ -223,11 +173,6 @@
     "profile": "21-CC32",
     "points": 5306,
     "timestamp": "2026-09-06T15:43:45.845Z"
-  },
-  {
-    "profile": "20-TH27",
-    "points": 4586,
-    "timestamp": "2026-09-06T15:43:54.921Z"
   },
   {
     "profile": "1-XU69",
@@ -345,16 +290,6 @@
     "timestamp": "2026-09-07T16:07:41.896Z"
   },
   {
-    "profile": "13-LE69",
-    "points": 1967,
-    "timestamp": "2026-09-07T16:09:06.263Z"
-  },
-  {
-    "profile": "13-LE69",
-    "points": 1998,
-    "timestamp": "2026-09-07T16:09:36.863Z"
-  },
-  {
     "profile": "14-XU11",
     "points": 1020,
     "timestamp": "2026-09-07T16:10:07.462Z"
@@ -375,44 +310,9 @@
     "timestamp": "2026-09-07T16:10:49.585Z"
   },
   {
-    "profile": "18-DU44",
-    "points": 3668,
-    "timestamp": "2026-09-07T16:10:49.593Z"
-  },
-  {
-    "profile": "18-DU44",
-    "points": 3688,
-    "timestamp": "2026-09-07T16:10:54.214Z"
-  },
-  {
     "profile": "17-TH5F",
     "points": 5626,
     "timestamp": "2026-09-07T16:11:02.296Z"
-  },
-  {
-    "profile": "18-DU44",
-    "points": 3698,
-    "timestamp": "2026-09-07T16:11:22.850Z"
-  },
-  {
-    "profile": "19-TLG4",
-    "points": 3164,
-    "timestamp": "2026-09-07T16:13:37.262Z"
-  },
-  {
-    "profile": "19-TLG4",
-    "points": 3194,
-    "timestamp": "2026-09-07T16:13:39.264Z"
-  },
-  {
-    "profile": "20-TH27",
-    "points": 4616,
-    "timestamp": "2026-09-07T16:13:55.282Z"
-  },
-  {
-    "profile": "20-TH27",
-    "points": 4636,
-    "timestamp": "2026-09-07T16:13:56.200Z"
   },
   {
     "profile": "21-CC32",
@@ -423,11 +323,6 @@
     "profile": "21-CC32",
     "points": 5336,
     "timestamp": "2026-09-07T16:14:19.201Z"
-  },
-  {
-    "profile": "20-TH27",
-    "points": 4646,
-    "timestamp": "2026-09-07T16:14:26.105Z"
   },
   {
     "profile": "22-BM82",
@@ -530,24 +425,9 @@
     "timestamp": "2026-09-08T10:50:45.104Z"
   },
   {
-    "profile": "13-LE69",
-    "points": 2084,
-    "timestamp": "2026-09-08T10:50:45.752Z"
-  },
-  {
-    "profile": "13-LE69",
-    "points": 2171,
-    "timestamp": "2026-09-08T10:50:47.689Z"
-  },
-  {
     "profile": "7-SH69",
     "points": 781,
     "timestamp": "2026-09-08T10:51:05.877Z"
-  },
-  {
-    "profile": "13-LE69",
-    "points": 2172,
-    "timestamp": "2026-09-08T10:51:15.248Z"
   },
   {
     "profile": "3-TU06",
@@ -620,54 +500,14 @@
     "timestamp": "2026-09-08T11:36:05.667Z"
   },
   {
-    "profile": "18-DU44",
-    "points": 3785,
-    "timestamp": "2026-09-08T11:36:25.737Z"
-  },
-  {
-    "profile": "20-TH27",
-    "points": 4733,
-    "timestamp": "2026-09-08T11:36:38.726Z"
-  },
-  {
-    "profile": "20-TH27",
-    "points": 4763,
-    "timestamp": "2026-09-08T11:36:40.678Z"
-  },
-  {
     "profile": "22-BM82",
     "points": 6276,
     "timestamp": "2026-09-08T11:36:43.862Z"
   },
   {
-    "profile": "19-TLG4",
-    "points": 3281,
-    "timestamp": "2026-09-08T11:36:51.735Z"
-  },
-  {
-    "profile": "18-DU44",
-    "points": 3873,
-    "timestamp": "2026-09-08T11:36:59.568Z"
-  },
-  {
-    "profile": "20-TH27",
-    "points": 4764,
-    "timestamp": "2026-09-08T11:37:12.174Z"
-  },
-  {
-    "profile": "19-TLG4",
-    "points": 4057,
-    "timestamp": "2026-09-08T11:37:20.395Z"
-  },
-  {
     "profile": "16-FA20",
     "points": 4668,
     "timestamp": "2026-09-08T11:38:15.641Z"
-  },
-  {
-    "profile": "13-LE69",
-    "points": 2258,
-    "timestamp": "2026-09-09T07:34:42.281Z"
   },
   {
     "profile": "6-KHYS",
@@ -683,11 +523,6 @@
     "profile": "6-KHYS",
     "points": 9196,
     "timestamp": "2026-09-09T07:35:08.866Z"
-  },
-  {
-    "profile": "13-LE69",
-    "points": 2346,
-    "timestamp": "2026-09-09T07:35:18.940Z"
   },
   {
     "profile": "1-XU69",
@@ -805,26 +640,6 @@
     "timestamp": "2026-09-09T07:39:46.240Z"
   },
   {
-    "profile": "26-JE03",
-    "points": 656,
-    "timestamp": "2026-09-09T11:19:23.010Z"
-  },
-  {
-    "profile": "26-JE03",
-    "points": 949,
-    "timestamp": "2026-09-09T11:19:32.536Z"
-  },
-  {
-    "profile": "27-LA86",
-    "points": 353,
-    "timestamp": "2026-09-09T11:24:12.632Z"
-  },
-  {
-    "profile": "27-LA86",
-    "points": 366,
-    "timestamp": "2026-09-09T11:24:15.608Z"
-  },
-  {
     "profile": "14-XU11",
     "points": 1308,
     "timestamp": "2026-09-09T11:35:32.576Z"
@@ -833,11 +648,6 @@
     "profile": "17-TH5F",
     "points": 5886,
     "timestamp": "2026-09-09T11:36:01.069Z"
-  },
-  {
-    "profile": "27-LA86",
-    "points": 367,
-    "timestamp": "2026-09-09T11:36:02.921Z"
   },
   {
     "profile": "17-TH5F",
@@ -860,49 +670,14 @@
     "timestamp": "2026-09-09T11:38:17.739Z"
   },
   {
-    "profile": "18-DU44",
-    "points": 3959,
-    "timestamp": "2026-09-09T11:38:23.490Z"
-  },
-  {
-    "profile": "18-DU44",
-    "points": 4036,
-    "timestamp": "2026-09-09T11:38:41.003Z"
-  },
-  {
     "profile": "21-CC32",
     "points": 340,
     "timestamp": "2026-09-09T11:39:06.587Z"
   },
   {
-    "profile": "18-DU44",
-    "points": 4046,
-    "timestamp": "2026-09-09T11:39:16.996Z"
-  },
-  {
-    "profile": "19-TLG4",
-    "points": 4635,
-    "timestamp": "2026-09-09T11:39:47.086Z"
-  },
-  {
-    "profile": "26-JE03",
-    "points": 982,
-    "timestamp": "2026-09-09T11:40:00.297Z"
-  },
-  {
     "profile": "22-BM82",
     "points": 6362,
     "timestamp": "2026-09-09T11:40:02.074Z"
-  },
-  {
-    "profile": "19-TLG4",
-    "points": 4722,
-    "timestamp": "2026-09-09T11:40:23.343Z"
-  },
-  {
-    "profile": "20-TH27",
-    "points": 4850,
-    "timestamp": "2026-09-09T11:40:24.070Z"
   },
   {
     "profile": "22-BM82",
@@ -913,11 +688,6 @@
     "profile": "21-CC32",
     "points": 358,
     "timestamp": "2026-09-09T11:40:50.441Z"
-  },
-  {
-    "profile": "20-TH27",
-    "points": 4881,
-    "timestamp": "2026-09-09T11:41:10.970Z"
   },
   {
     "profile": "16-FA20",
@@ -945,19 +715,9 @@
     "timestamp": "2026-09-10T05:37:16.202Z"
   },
   {
-    "profile": "13-LE69",
-    "points": 2432,
-    "timestamp": "2026-09-10T05:37:29.207Z"
-  },
-  {
     "profile": "6-KHYS",
     "points": 9378,
     "timestamp": "2026-09-10T05:37:46.544Z"
-  },
-  {
-    "profile": "13-LE69",
-    "points": 2590,
-    "timestamp": "2026-09-10T05:37:58.414Z"
   },
   {
     "profile": "8-SITO",
@@ -1055,41 +815,6 @@
     "timestamp": "2026-09-10T05:40:32.230Z"
   },
   {
-    "profile": "26-JE03",
-    "points": 1081,
-    "timestamp": "2026-09-10T07:59:16.904Z"
-  },
-  {
-    "profile": "26-JE03",
-    "points": 1124,
-    "timestamp": "2026-09-10T08:07:30.363Z"
-  },
-  {
-    "profile": "27-LA86",
-    "points": 387,
-    "timestamp": "2026-09-10T08:07:44.230Z"
-  },
-  {
-    "profile": "23-SH15",
-    "points": 369,
-    "timestamp": "2026-09-10T08:10:14.349Z"
-  },
-  {
-    "profile": "25-KY75",
-    "points": 368,
-    "timestamp": "2026-09-10T08:14:05.769Z"
-  },
-  {
-    "profile": "24-SA11",
-    "points": 369,
-    "timestamp": "2026-09-10T08:17:04.535Z"
-  },
-  {
-    "profile": "24-SA11",
-    "points": 372,
-    "timestamp": "2026-09-10T12:48:17.640Z"
-  },
-  {
     "profile": "17-TH5F",
     "points": 700,
     "timestamp": "2026-09-10T12:48:38.634Z"
@@ -1105,11 +830,6 @@
     "timestamp": "2026-09-10T12:48:49.647Z"
   },
   {
-    "profile": "20-TH27",
-    "points": 4967,
-    "timestamp": "2026-09-10T12:49:03.645Z"
-  },
-  {
     "profile": "17-TH5F",
     "points": 788,
     "timestamp": "2026-09-10T12:49:07.221Z"
@@ -1118,21 +838,6 @@
     "profile": "22-BM82",
     "points": 6536,
     "timestamp": "2026-09-10T12:49:14.640Z"
-  },
-  {
-    "profile": "18-DU44",
-    "points": 4133,
-    "timestamp": "2026-09-10T12:49:25.658Z"
-  },
-  {
-    "profile": "18-DU44",
-    "points": 4220,
-    "timestamp": "2026-09-10T12:49:27.578Z"
-  },
-  {
-    "profile": "20-TH27",
-    "points": 4998,
-    "timestamp": "2026-09-10T12:49:35.469Z"
   },
   {
     "profile": "21-CC32",
@@ -1145,16 +850,6 @@
     "timestamp": "2026-09-10T12:49:47.185Z"
   },
   {
-    "profile": "18-DU44",
-    "points": 4221,
-    "timestamp": "2026-09-10T12:49:56.104Z"
-  },
-  {
-    "profile": "19-TLG4",
-    "points": 4809,
-    "timestamp": "2026-09-10T12:49:58.639Z"
-  },
-  {
     "profile": "16-FA20",
     "points": 4956,
     "timestamp": "2026-09-10T12:50:06.513Z"
@@ -1163,46 +858,6 @@
     "profile": "21-CC32",
     "points": 509,
     "timestamp": "2026-09-10T12:50:15.328Z"
-  },
-  {
-    "profile": "19-TLG4",
-    "points": 4897,
-    "timestamp": "2026-09-10T12:50:31.297Z"
-  },
-  {
-    "profile": "24-SA11",
-    "points": 374,
-    "timestamp": "2026-09-10T13:29:09.745Z"
-  },
-  {
-    "profile": "26-JE03",
-    "points": 1127,
-    "timestamp": "2026-09-10T13:29:17.792Z"
-  },
-  {
-    "profile": "27-LA86",
-    "points": 388,
-    "timestamp": "2026-09-10T13:29:20.794Z"
-  },
-  {
-    "profile": "23-SH15",
-    "points": 371,
-    "timestamp": "2026-09-10T13:29:23.347Z"
-  },
-  {
-    "profile": "25-KY75",
-    "points": 368,
-    "timestamp": "2026-09-10T13:29:26.755Z"
-  },
-  {
-    "profile": "23-SH15",
-    "points": 372,
-    "timestamp": "2026-09-10T15:31:19.454Z"
-  },
-  {
-    "profile": "25-KY75",
-    "points": 369,
-    "timestamp": "2026-09-10T15:31:55.920Z"
   },
   {
     "profile": "6-KHYS",
@@ -1215,24 +870,9 @@
     "timestamp": "2026-09-11T05:41:09.863Z"
   },
   {
-    "profile": "13-LE69",
-    "points": 2676,
-    "timestamp": "2026-09-11T05:41:21.933Z"
-  },
-  {
-    "profile": "13-LE69",
-    "points": 2743,
-    "timestamp": "2026-09-11T05:41:22.876Z"
-  },
-  {
     "profile": "6-KHYS",
     "points": 9622,
     "timestamp": "2026-09-11T05:41:39.367Z"
-  },
-  {
-    "profile": "13-LE69",
-    "points": 2764,
-    "timestamp": "2026-09-11T05:41:55.256Z"
   },
   {
     "profile": "5-TU79",
@@ -1325,29 +965,9 @@
     "timestamp": "2026-09-11T05:44:34.893Z"
   },
   {
-    "profile": "24-SA11",
-    "points": 384,
-    "timestamp": "2026-09-11T08:08:48.040Z"
-  },
-  {
     "profile": "14-XU11",
     "points": 1596,
     "timestamp": "2026-09-11T08:08:57.351Z"
-  },
-  {
-    "profile": "25-KY75",
-    "points": 371,
-    "timestamp": "2026-09-11T08:09:01.802Z"
-  },
-  {
-    "profile": "25-KY75",
-    "points": 401,
-    "timestamp": "2026-09-11T08:09:03.981Z"
-  },
-  {
-    "profile": "24-SA11",
-    "points": 405,
-    "timestamp": "2026-09-11T08:09:14.509Z"
   },
   {
     "profile": "17-TH5F",
@@ -1355,79 +975,9 @@
     "timestamp": "2026-09-11T08:09:16.057Z"
   },
   {
-    "profile": "25-KY75",
-    "points": 402,
-    "timestamp": "2026-09-11T08:09:27.743Z"
-  },
-  {
-    "profile": "23-SH15",
-    "points": 374,
-    "timestamp": "2026-09-11T08:09:33.036Z"
-  },
-  {
     "profile": "17-TH5F",
     "points": 1032,
     "timestamp": "2026-09-11T08:09:48.333Z"
-  },
-  {
-    "profile": "27-LA86",
-    "points": 390,
-    "timestamp": "2026-09-11T08:09:53.041Z"
-  },
-  {
-    "profile": "23-SH15",
-    "points": 405,
-    "timestamp": "2026-09-11T08:10:04.043Z"
-  },
-  {
-    "profile": "27-LA86",
-    "points": 421,
-    "timestamp": "2026-09-11T08:10:21.274Z"
-  },
-  {
-    "profile": "20-TH27",
-    "points": 5084,
-    "timestamp": "2026-09-11T08:10:24.290Z"
-  },
-  {
-    "profile": "20-TH27",
-    "points": 5094,
-    "timestamp": "2026-09-11T08:10:25.985Z"
-  },
-  {
-    "profile": "26-JE03",
-    "points": 1129,
-    "timestamp": "2026-09-11T08:10:44.103Z"
-  },
-  {
-    "profile": "26-JE03",
-    "points": 1149,
-    "timestamp": "2026-09-11T08:10:47.999Z"
-  },
-  {
-    "profile": "20-TH27",
-    "points": 5185,
-    "timestamp": "2026-09-11T08:10:57.588Z"
-  },
-  {
-    "profile": "18-DU44",
-    "points": 4374,
-    "timestamp": "2026-09-11T08:11:03.058Z"
-  },
-  {
-    "profile": "26-JE03",
-    "points": 1159,
-    "timestamp": "2026-09-11T08:11:15.322Z"
-  },
-  {
-    "profile": "19-TLG4",
-    "points": 4983,
-    "timestamp": "2026-09-11T08:11:19.043Z"
-  },
-  {
-    "profile": "19-TLG4",
-    "points": 5060,
-    "timestamp": "2026-09-11T08:11:20.982Z"
   },
   {
     "profile": "22-BM82",
@@ -1445,19 +995,9 @@
     "timestamp": "2026-09-11T08:11:37.090Z"
   },
   {
-    "profile": "18-DU44",
-    "points": 4464,
-    "timestamp": "2026-09-11T08:11:40.625Z"
-  },
-  {
     "profile": "22-BM82",
     "points": 1427,
     "timestamp": "2026-09-11T08:11:42.996Z"
-  },
-  {
-    "profile": "19-TLG4",
-    "points": 5071,
-    "timestamp": "2026-09-11T08:11:45.869Z"
   },
   {
     "profile": "21-CC32",
@@ -1480,24 +1020,9 @@
     "timestamp": "2026-09-11T08:12:51.348Z"
   },
   {
-    "profile": "13-LE69",
-    "points": 2850,
-    "timestamp": "2026-09-12T04:48:08.511Z"
-  },
-  {
-    "profile": "13-LE69",
-    "points": 2937,
-    "timestamp": "2026-09-12T04:48:12.457Z"
-  },
-  {
     "profile": "6-KHYS",
     "points": 9708,
     "timestamp": "2026-09-12T04:48:27.551Z"
-  },
-  {
-    "profile": "13-LE69",
-    "points": 2938,
-    "timestamp": "2026-09-12T04:48:40.436Z"
   },
   {
     "profile": "4-NG11",
@@ -1600,39 +1125,9 @@
     "timestamp": "2026-09-12T04:55:22.747Z"
   },
   {
-    "profile": "25-KY75",
-    "points": 428,
-    "timestamp": "2026-09-12T05:57:14.600Z"
-  },
-  {
-    "profile": "24-SA11",
-    "points": 431,
-    "timestamp": "2026-09-12T05:57:32.601Z"
-  },
-  {
-    "profile": "25-KY75",
-    "points": 459,
-    "timestamp": "2026-09-12T05:57:44.187Z"
-  },
-  {
     "profile": "17-TH5F",
     "points": 1118,
     "timestamp": "2026-09-12T05:57:46.597Z"
-  },
-  {
-    "profile": "24-SA11",
-    "points": 462,
-    "timestamp": "2026-09-12T05:57:58.518Z"
-  },
-  {
-    "profile": "23-SH15",
-    "points": 431,
-    "timestamp": "2026-09-12T05:58:09.603Z"
-  },
-  {
-    "profile": "23-SH15",
-    "points": 451,
-    "timestamp": "2026-09-12T05:58:14.542Z"
   },
   {
     "profile": "17-TH5F",
@@ -1645,29 +1140,9 @@
     "timestamp": "2026-09-12T05:58:22.837Z"
   },
   {
-    "profile": "27-LA86",
-    "points": 447,
-    "timestamp": "2026-09-12T05:58:25.921Z"
-  },
-  {
-    "profile": "23-SH15",
-    "points": 462,
-    "timestamp": "2026-09-12T05:58:38.343Z"
-  },
-  {
-    "profile": "27-LA86",
-    "points": 478,
-    "timestamp": "2026-09-12T05:58:52.576Z"
-  },
-  {
     "profile": "16-FA20",
     "points": 5244,
     "timestamp": "2026-09-12T05:59:05.969Z"
-  },
-  {
-    "profile": "26-JE03",
-    "points": 1246,
-    "timestamp": "2026-09-12T05:59:07.606Z"
   },
   {
     "profile": "22-BM82",
@@ -1675,49 +1150,14 @@
     "timestamp": "2026-09-12T05:59:41.594Z"
   },
   {
-    "profile": "26-JE03",
-    "points": 2460,
-    "timestamp": "2026-09-12T05:59:54.030Z"
-  },
-  {
-    "profile": "19-TLG4",
-    "points": 5157,
-    "timestamp": "2026-09-12T05:59:57.600Z"
-  },
-  {
-    "profile": "18-DU44",
-    "points": 4551,
-    "timestamp": "2026-09-12T06:00:11.605Z"
-  },
-  {
     "profile": "22-BM82",
     "points": 1682,
     "timestamp": "2026-09-12T06:00:17.235Z"
   },
   {
-    "profile": "19-TLG4",
-    "points": 5244,
-    "timestamp": "2026-09-12T06:00:25.418Z"
-  },
-  {
-    "profile": "20-TH27",
-    "points": 5271,
-    "timestamp": "2026-09-12T06:00:26.411Z"
-  },
-  {
     "profile": "21-CC32",
     "points": 839,
     "timestamp": "2026-09-12T06:00:41.979Z"
-  },
-  {
-    "profile": "18-DU44",
-    "points": 4639,
-    "timestamp": "2026-09-12T06:00:55.553Z"
-  },
-  {
-    "profile": "20-TH27",
-    "points": 5359,
-    "timestamp": "2026-09-12T06:01:07.622Z"
   },
   {
     "profile": "21-CC32",
@@ -1830,16 +1270,6 @@
     "timestamp": "2026-09-12T15:26:43.797Z"
   },
   {
-    "profile": "13-LE69",
-    "points": 3024,
-    "timestamp": "2026-09-12T15:27:40.853Z"
-  },
-  {
-    "profile": "13-LE69",
-    "points": 3291,
-    "timestamp": "2026-09-12T15:27:42.800Z"
-  },
-  {
     "profile": "14-XU11",
     "points": 1809,
     "timestamp": "2026-09-12T15:28:05.856Z"
@@ -1875,51 +1305,6 @@
     "timestamp": "2026-09-12T15:31:03.989Z"
   },
   {
-    "profile": "18-DU44",
-    "points": 4725,
-    "timestamp": "2026-09-12T15:31:26.858Z"
-  },
-  {
-    "profile": "18-DU44",
-    "points": 4974,
-    "timestamp": "2026-09-12T15:31:30.795Z"
-  },
-  {
-    "profile": "18-DU44",
-    "points": 4989,
-    "timestamp": "2026-09-12T15:31:32.446Z"
-  },
-  {
-    "profile": "19-TLG4",
-    "points": 5331,
-    "timestamp": "2026-09-12T15:31:53.865Z"
-  },
-  {
-    "profile": "19-TLG4",
-    "points": 5483,
-    "timestamp": "2026-09-12T15:31:54.791Z"
-  },
-  {
-    "profile": "19-TLG4",
-    "points": 5498,
-    "timestamp": "2026-09-12T15:32:00.796Z"
-  },
-  {
-    "profile": "20-TH27",
-    "points": 5445,
-    "timestamp": "2026-09-12T15:32:25.851Z"
-  },
-  {
-    "profile": "20-TH27",
-    "points": 5677,
-    "timestamp": "2026-09-12T15:32:27.785Z"
-  },
-  {
-    "profile": "20-TH27",
-    "points": 5697,
-    "timestamp": "2026-09-12T15:32:35.837Z"
-  },
-  {
     "profile": "21-CC32",
     "points": 1013,
     "timestamp": "2026-09-12T15:32:56.851Z"
@@ -1948,56 +1333,6 @@
     "profile": "22-BM82",
     "points": 2035,
     "timestamp": "2026-09-12T15:33:43.660Z"
-  },
-  {
-    "profile": "23-SH15",
-    "points": 488,
-    "timestamp": "2026-09-12T15:33:59.849Z"
-  },
-  {
-    "profile": "26-JE03",
-    "points": 2547,
-    "timestamp": "2026-09-12T15:34:32.860Z"
-  },
-  {
-    "profile": "26-JE03",
-    "points": 2649,
-    "timestamp": "2026-09-12T15:34:36.792Z"
-  },
-  {
-    "profile": "26-JE03",
-    "points": 2664,
-    "timestamp": "2026-09-12T15:34:37.785Z"
-  },
-  {
-    "profile": "26-JE03",
-    "points": 2694,
-    "timestamp": "2026-09-12T15:34:41.787Z"
-  },
-  {
-    "profile": "24-SA11",
-    "points": 488,
-    "timestamp": "2026-09-12T15:35:05.856Z"
-  },
-  {
-    "profile": "25-KY75",
-    "points": 485,
-    "timestamp": "2026-09-12T15:35:24.838Z"
-  },
-  {
-    "profile": "25-KY75",
-    "points": 495,
-    "timestamp": "2026-09-12T15:35:25.793Z"
-  },
-  {
-    "profile": "27-LA86",
-    "points": 567,
-    "timestamp": "2026-09-12T15:36:04.843Z"
-  },
-  {
-    "profile": "27-LA86",
-    "points": 672,
-    "timestamp": "2026-09-12T15:36:07.819Z"
   },
   {
     "profile": "8-SITO",
@@ -2090,24 +1425,9 @@
     "timestamp": "2026-09-13T02:42:26.858Z"
   },
   {
-    "profile": "13-LE69",
-    "points": 3291,
-    "timestamp": "2026-09-13T02:42:34.791Z"
-  },
-  {
     "profile": "3-TU06",
     "points": 668,
     "timestamp": "2026-09-13T02:42:58.045Z"
-  },
-  {
-    "profile": "13-LE69",
-    "points": 3311,
-    "timestamp": "2026-09-13T02:42:58.742Z"
-  },
-  {
-    "profile": "13-LE69",
-    "points": 3321,
-    "timestamp": "2026-09-13T02:43:30.047Z"
   },
   {
     "profile": "5-TU79",
@@ -2120,29 +1440,9 @@
     "timestamp": "2026-09-13T05:41:43.598Z"
   },
   {
-    "profile": "19-TLG4",
-    "points": 5498,
-    "timestamp": "2026-09-13T05:41:57.583Z"
-  },
-  {
-    "profile": "19-TLG4",
-    "points": 5518,
-    "timestamp": "2026-09-13T05:42:02.521Z"
-  },
-  {
     "profile": "22-BM82",
     "points": 2066,
     "timestamp": "2026-09-13T05:42:16.881Z"
-  },
-  {
-    "profile": "24-SA11",
-    "points": 498,
-    "timestamp": "2026-09-13T05:42:27.590Z"
-  },
-  {
-    "profile": "19-TLG4",
-    "points": 5598,
-    "timestamp": "2026-09-13T05:42:27.827Z"
   },
   {
     "profile": "16-FA20",
@@ -2150,69 +1450,14 @@
     "timestamp": "2026-09-13T05:42:38.323Z"
   },
   {
-    "profile": "25-KY75",
-    "points": 495,
-    "timestamp": "2026-09-13T05:42:51.587Z"
-  },
-  {
-    "profile": "25-KY75",
-    "points": 537,
-    "timestamp": "2026-09-13T05:42:53.520Z"
-  },
-  {
-    "profile": "24-SA11",
-    "points": 538,
-    "timestamp": "2026-09-13T05:42:57.831Z"
-  },
-  {
-    "profile": "25-KY75",
-    "points": 538,
-    "timestamp": "2026-09-13T05:43:21.759Z"
-  },
-  {
-    "profile": "23-SH15",
-    "points": 498,
-    "timestamp": "2026-09-13T05:43:24.584Z"
-  },
-  {
-    "profile": "27-LA86",
-    "points": 672,
-    "timestamp": "2026-09-13T05:43:43.592Z"
-  },
-  {
-    "profile": "23-SH15",
-    "points": 528,
-    "timestamp": "2026-09-13T05:43:51.749Z"
-  },
-  {
-    "profile": "26-JE03",
-    "points": 2699,
-    "timestamp": "2026-09-13T05:43:58.584Z"
-  },
-  {
     "profile": "14-XU11",
     "points": 1931,
     "timestamp": "2026-09-13T05:44:01.527Z"
   },
   {
-    "profile": "27-LA86",
-    "points": 703,
-    "timestamp": "2026-09-13T05:44:12.397Z"
-  },
-  {
-    "profile": "18-DU44",
-    "points": 4989,
-    "timestamp": "2026-09-13T05:44:13.630Z"
-  },
-  {
     "profile": "21-CC32",
     "points": 1280,
     "timestamp": "2026-09-13T05:44:27.655Z"
-  },
-  {
-    "profile": "26-JE03",
-    "points": 2729,
-    "timestamp": "2026-09-13T05:44:33.307Z"
   },
   {
     "profile": "17-TH5F",
@@ -2225,16 +1470,6 @@
     "timestamp": "2026-09-13T05:44:44.534Z"
   },
   {
-    "profile": "18-DU44",
-    "points": 5020,
-    "timestamp": "2026-09-13T05:44:51.995Z"
-  },
-  {
-    "profile": "20-TH27",
-    "points": 5697,
-    "timestamp": "2026-09-13T05:44:58.620Z"
-  },
-  {
     "profile": "21-CC32",
     "points": 1311,
     "timestamp": "2026-09-13T05:45:05.647Z"
@@ -2245,34 +1480,14 @@
     "timestamp": "2026-09-13T05:45:23.409Z"
   },
   {
-    "profile": "20-TH27",
-    "points": 5728,
-    "timestamp": "2026-09-13T05:45:37.939Z"
-  },
-  {
     "profile": "3-TU06",
     "points": 755,
     "timestamp": "2026-09-14T06:08:17.487Z"
   },
   {
-    "profile": "13-LE69",
-    "points": 3408,
-    "timestamp": "2026-09-14T06:08:42.480Z"
-  },
-  {
-    "profile": "13-LE69",
-    "points": 3495,
-    "timestamp": "2026-09-14T06:08:45.415Z"
-  },
-  {
     "profile": "3-TU06",
     "points": 843,
     "timestamp": "2026-09-14T06:08:47.341Z"
-  },
-  {
-    "profile": "13-LE69",
-    "points": 3496,
-    "timestamp": "2026-09-14T06:09:10.863Z"
   },
   {
     "profile": "6-KHYS",
@@ -2370,11 +1585,6 @@
     "timestamp": "2026-09-14T06:17:26.222Z"
   },
   {
-    "profile": "19-TLG4",
-    "points": 5685,
-    "timestamp": "2026-09-14T11:47:10.300Z"
-  },
-  {
     "profile": "16-FA20",
     "points": 85,
     "timestamp": "2026-09-14T11:47:10.538Z"
@@ -2383,16 +1593,6 @@
     "profile": "22-BM82",
     "points": 2152,
     "timestamp": "2026-09-14T11:47:33.308Z"
-  },
-  {
-    "profile": "19-TLG4",
-    "points": 5772,
-    "timestamp": "2026-09-14T11:47:44.025Z"
-  },
-  {
-    "profile": "18-DU44",
-    "points": 5106,
-    "timestamp": "2026-09-14T11:47:58.317Z"
   },
   {
     "profile": "22-BM82",
@@ -2415,79 +1615,14 @@
     "timestamp": "2026-09-14T11:48:30.333Z"
   },
   {
-    "profile": "18-DU44",
-    "points": 5193,
-    "timestamp": "2026-09-14T11:48:32.804Z"
-  },
-  {
     "profile": "21-CC32",
     "points": 1485,
     "timestamp": "2026-09-14T11:48:44.405Z"
   },
   {
-    "profile": "26-JE03",
-    "points": 2816,
-    "timestamp": "2026-09-14T11:48:46.320Z"
-  },
-  {
-    "profile": "25-KY75",
-    "points": 624,
-    "timestamp": "2026-09-14T11:49:04.335Z"
-  },
-  {
     "profile": "17-TH5F",
     "points": 1739,
     "timestamp": "2026-09-14T11:49:07.086Z"
-  },
-  {
-    "profile": "26-JE03",
-    "points": 2904,
-    "timestamp": "2026-09-14T11:49:17.311Z"
-  },
-  {
-    "profile": "23-SH15",
-    "points": 615,
-    "timestamp": "2026-09-14T11:49:21.465Z"
-  },
-  {
-    "profile": "25-KY75",
-    "points": 654,
-    "timestamp": "2026-09-14T11:49:33.402Z"
-  },
-  {
-    "profile": "24-SA11",
-    "points": 624,
-    "timestamp": "2026-09-14T11:49:39.323Z"
-  },
-  {
-    "profile": "27-LA86",
-    "points": 789,
-    "timestamp": "2026-09-14T11:49:55.340Z"
-  },
-  {
-    "profile": "23-SH15",
-    "points": 702,
-    "timestamp": "2026-09-14T11:49:56.676Z"
-  },
-  {
-    "profile": "24-SA11",
-    "points": 712,
-    "timestamp": "2026-09-14T11:50:04.171Z"
-  },
-  {
-    "profile": "20-TH27",
-    "points": 5814,
-    "timestamp": "2026-09-14T11:50:11.933Z"
-  },
-  {
-    "profile": "27-LA86",
-    "points": 877,
-    "timestamp": "2026-09-14T11:50:31.328Z"
-  },
-  {
-    "profile": "20-TH27",
-    "points": 5902,
-    "timestamp": "2026-09-14T11:50:48.841Z"
   },
   {
     "profile": "12-HP45",
@@ -2615,24 +1750,9 @@
     "timestamp": "2026-09-16T08:06:34.019Z"
   },
   {
-    "profile": "13-LE69",
-    "points": 3582,
-    "timestamp": "2026-09-16T08:11:32.098Z"
-  },
-  {
-    "profile": "13-LE69",
-    "points": 3669,
-    "timestamp": "2026-09-16T08:11:34.009Z"
-  },
-  {
     "profile": "1-XU69",
     "points": 3662,
     "timestamp": "2026-09-16T08:11:59.058Z"
-  },
-  {
-    "profile": "13-LE69",
-    "points": 3670,
-    "timestamp": "2026-09-16T08:12:03.191Z"
   },
   {
     "profile": "9-RO25",
@@ -2755,34 +1875,9 @@
     "timestamp": "2026-09-16T12:15:09.487Z"
   },
   {
-    "profile": "20-TH27",
-    "points": 5988,
-    "timestamp": "2026-09-16T12:15:38.987Z"
-  },
-  {
-    "profile": "18-DU44",
-    "points": 5280,
-    "timestamp": "2026-09-16T12:15:53.480Z"
-  },
-  {
     "profile": "22-BM82",
     "points": 2414,
     "timestamp": "2026-09-16T12:15:53.944Z"
-  },
-  {
-    "profile": "20-TH27",
-    "points": 6076,
-    "timestamp": "2026-09-16T12:16:11.100Z"
-  },
-  {
-    "profile": "19-TLG4",
-    "points": 5946,
-    "timestamp": "2026-09-16T12:16:11.477Z"
-  },
-  {
-    "profile": "18-DU44",
-    "points": 5368,
-    "timestamp": "2026-09-16T12:16:26.869Z"
   },
   {
     "profile": "15-TH7G",
@@ -2793,11 +1888,6 @@
     "profile": "15-TH7G",
     "points": 381,
     "timestamp": "2026-09-16T12:16:34.417Z"
-  },
-  {
-    "profile": "19-TLG4",
-    "points": 5947,
-    "timestamp": "2026-09-16T12:16:40.084Z"
   },
   {
     "profile": "16-FA20",
@@ -2820,39 +1910,9 @@
     "timestamp": "2026-09-16T12:17:17.907Z"
   },
   {
-    "profile": "25-KY75",
-    "points": 741,
-    "timestamp": "2026-09-16T12:17:28.298Z"
-  },
-  {
-    "profile": "25-KY75",
-    "points": 771,
-    "timestamp": "2026-09-16T12:17:29.466Z"
-  },
-  {
     "profile": "17-TH5F",
     "points": 1914,
     "timestamp": "2026-09-16T12:17:39.913Z"
-  },
-  {
-    "profile": "27-LA86",
-    "points": 963,
-    "timestamp": "2026-09-16T12:17:55.496Z"
-  },
-  {
-    "profile": "25-KY75",
-    "points": 772,
-    "timestamp": "2026-09-16T12:18:04.906Z"
-  },
-  {
-    "profile": "23-SH15",
-    "points": 789,
-    "timestamp": "2026-09-16T12:18:18.519Z"
-  },
-  {
-    "profile": "27-LA86",
-    "points": 2211,
-    "timestamp": "2026-09-16T12:18:29.622Z"
   },
   {
     "profile": "21-CC32",
@@ -2860,44 +1920,9 @@
     "timestamp": "2026-09-16T12:18:40.098Z"
   },
   {
-    "profile": "23-SH15",
-    "points": 876,
-    "timestamp": "2026-09-16T12:18:57.917Z"
-  },
-  {
-    "profile": "24-SA11",
-    "points": 798,
-    "timestamp": "2026-09-16T12:19:00.493Z"
-  },
-  {
-    "profile": "24-SA11",
-    "points": 885,
-    "timestamp": "2026-09-16T12:19:01.434Z"
-  },
-  {
     "profile": "21-CC32",
     "points": 1659,
     "timestamp": "2026-09-16T12:19:13.557Z"
-  },
-  {
-    "profile": "26-JE03",
-    "points": 2990,
-    "timestamp": "2026-09-16T12:19:14.509Z"
-  },
-  {
-    "profile": "24-SA11",
-    "points": 886,
-    "timestamp": "2026-09-16T12:19:30.631Z"
-  },
-  {
-    "profile": "26-JE03",
-    "points": 3078,
-    "timestamp": "2026-09-16T12:19:45.937Z"
-  },
-  {
-    "profile": "13-LE69",
-    "points": 3756,
-    "timestamp": "2026-09-17T09:18:10.122Z"
   },
   {
     "profile": "9-RO25",
@@ -2908,11 +1933,6 @@
     "profile": "3-TU06",
     "points": 1282,
     "timestamp": "2026-09-17T09:18:35.134Z"
-  },
-  {
-    "profile": "13-LE69",
-    "points": 3843,
-    "timestamp": "2026-09-17T09:18:39.395Z"
   },
   {
     "profile": "3-TU06",
@@ -3020,49 +2040,9 @@
     "timestamp": "2026-09-17T09:22:07.563Z"
   },
   {
-    "profile": "20-TH27",
-    "points": 6162,
-    "timestamp": "2026-09-17T12:36:33.123Z"
-  },
-  {
-    "profile": "20-TH27",
-    "points": 6249,
-    "timestamp": "2026-09-17T12:36:34.072Z"
-  },
-  {
-    "profile": "18-DU44",
-    "points": 5454,
-    "timestamp": "2026-09-17T12:36:51.102Z"
-  },
-  {
-    "profile": "18-DU44",
-    "points": 5531,
-    "timestamp": "2026-09-17T12:36:52.055Z"
-  },
-  {
-    "profile": "20-TH27",
-    "points": 6250,
-    "timestamp": "2026-09-17T12:37:05.111Z"
-  },
-  {
-    "profile": "19-TLG4",
-    "points": 6033,
-    "timestamp": "2026-09-17T12:37:08.110Z"
-  },
-  {
-    "profile": "18-DU44",
-    "points": 5542,
-    "timestamp": "2026-09-17T12:37:24.259Z"
-  },
-  {
     "profile": "15-TH7G",
     "points": 418,
     "timestamp": "2026-09-17T12:37:26.095Z"
-  },
-  {
-    "profile": "19-TLG4",
-    "points": 6120,
-    "timestamp": "2026-09-17T12:37:44.102Z"
   },
   {
     "profile": "15-TH7G",
@@ -3085,54 +2065,14 @@
     "timestamp": "2026-09-17T12:38:18.475Z"
   },
   {
-    "profile": "24-SA11",
-    "points": 972,
-    "timestamp": "2026-09-17T12:38:22.107Z"
-  },
-  {
     "profile": "14-XU11",
     "points": 2363,
     "timestamp": "2026-09-17T12:38:37.996Z"
   },
   {
-    "profile": "23-SH15",
-    "points": 1030,
-    "timestamp": "2026-09-17T12:38:44.493Z"
-  },
-  {
-    "profile": "24-SA11",
-    "points": 2219,
-    "timestamp": "2026-09-17T12:38:54.815Z"
-  },
-  {
-    "profile": "27-LA86",
-    "points": 2297,
-    "timestamp": "2026-09-17T12:39:03.103Z"
-  },
-  {
     "profile": "21-CC32",
     "points": 1745,
     "timestamp": "2026-09-17T12:39:17.630Z"
-  },
-  {
-    "profile": "23-SH15",
-    "points": 2211,
-    "timestamp": "2026-09-17T12:39:22.407Z"
-  },
-  {
-    "profile": "27-LA86",
-    "points": 2384,
-    "timestamp": "2026-09-17T12:39:27.961Z"
-  },
-  {
-    "profile": "26-JE03",
-    "points": 3164,
-    "timestamp": "2026-09-17T12:39:32.129Z"
-  },
-  {
-    "profile": "25-KY75",
-    "points": 858,
-    "timestamp": "2026-09-17T12:39:49.140Z"
   },
   {
     "profile": "21-CC32",
@@ -3145,19 +2085,9 @@
     "timestamp": "2026-09-17T12:40:04.143Z"
   },
   {
-    "profile": "26-JE03",
-    "points": 3251,
-    "timestamp": "2026-09-17T12:40:08.185Z"
-  },
-  {
     "profile": "17-TH5F",
     "points": 2087,
     "timestamp": "2026-09-17T12:40:47.187Z"
-  },
-  {
-    "profile": "25-KY75",
-    "points": 2038,
-    "timestamp": "2026-09-17T12:40:58.225Z"
   },
   {
     "profile": "4-NG11",
