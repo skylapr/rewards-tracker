@@ -2185,8 +2185,18 @@
     "timestamp": "2026-09-22T08:46:03.492Z"
   },
   {
+    "profile": "12-HP45",
+    "points": 505,
+    "timestamp": "2026-09-22T08:46:09.088Z"
+  },
+  {
     "profile": "17-TH5F",
     "points": 2174,
     "timestamp": "2026-09-22T08:46:45.072Z"
+  },
+  {
+    "profile": "12-HP45",
+    "points": 506,
+    "timestamp": "2026-09-22T08:46:52.607Z"
   }
 ]
