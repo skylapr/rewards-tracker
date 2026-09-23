@@ -2190,6 +2190,11 @@
     "timestamp": "2026-09-22T08:19:03.868Z"
   },
   {
+    "profile": "6-KHYS",
+    "points": 70,
+    "timestamp": "2026-09-22T08:19:18.710Z"
+  },
+  {
     "profile": "3-TU06",
     "points": 1615,
     "timestamp": "2026-09-22T08:26:36.497Z"
@@ -2288,5 +2293,10 @@
     "profile": "3-TU06",
     "points": 1630,
     "timestamp": "2026-09-23T06:05:07.100Z"
+  },
+  {
+    "profile": "6-KHYS",
+    "points": 157,
+    "timestamp": "2026-09-23T06:05:20.014Z"
   }
 ]
