@@ -2140,6 +2140,11 @@
     "timestamp": "2026-09-22T08:17:57.752Z"
   },
   {
+    "profile": "1-XU69",
+    "points": 4263,
+    "timestamp": "2026-09-22T08:18:01.659Z"
+  },
+  {
     "profile": "5-TU79",
     "points": 5617,
     "timestamp": "2026-09-22T08:18:02.697Z"
@@ -2263,5 +2268,10 @@
     "profile": "10-FR83",
     "points": 5987,
     "timestamp": "2026-09-23T06:04:11.804Z"
+  },
+  {
+    "profile": "1-XU69",
+    "points": 4350,
+    "timestamp": "2026-09-23T06:04:28.072Z"
   }
 ]
