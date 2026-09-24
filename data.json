@@ -2370,9 +2370,19 @@
     "timestamp": "2026-09-23T06:05:20.014Z"
   },
   {
+    "profile": "6-KHYS",
+    "points": 234,
+    "timestamp": "2026-09-23T06:05:25.012Z"
+  },
+  {
     "profile": "11-WE82",
     "points": 2107,
     "timestamp": "2026-09-23T06:05:27.184Z"
+  },
+  {
+    "profile": "6-KHYS",
+    "points": 244,
+    "timestamp": "2026-09-23T06:05:53.343Z"
   },
   {
     "profile": "22-BM82",
@@ -2458,5 +2468,10 @@
     "profile": "4-NG11",
     "points": 990,
     "timestamp": "2026-09-24T05:43:03.068Z"
+  },
+  {
+    "profile": "6-KHYS",
+    "points": 331,
+    "timestamp": "2026-09-24T05:43:18.080Z"
   }
 ]
