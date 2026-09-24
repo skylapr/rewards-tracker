@@ -2345,6 +2345,11 @@
     "timestamp": "2026-09-23T06:04:41.111Z"
   },
   {
+    "profile": "4-NG11",
+    "points": 903,
+    "timestamp": "2026-09-23T06:04:44.012Z"
+  },
+  {
     "profile": "8-SITO",
     "points": 4622,
     "timestamp": "2026-09-23T06:04:49.092Z"
@@ -2448,5 +2453,10 @@
     "profile": "9-RO25",
     "points": 3024,
     "timestamp": "2026-09-24T05:42:51.772Z"
+  },
+  {
+    "profile": "4-NG11",
+    "points": 990,
+    "timestamp": "2026-09-24T05:43:03.068Z"
   }
 ]
