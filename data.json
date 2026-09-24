@@ -2335,6 +2335,11 @@
     "timestamp": "2026-09-23T06:04:28.072Z"
   },
   {
+    "profile": "2-PORT",
+    "points": 3745,
+    "timestamp": "2026-09-23T06:04:32.882Z"
+  },
+  {
     "profile": "4-NG11",
     "points": 816,
     "timestamp": "2026-09-23T06:04:41.111Z"
@@ -2413,5 +2418,10 @@
     "profile": "7-SH69",
     "points": 2574,
     "timestamp": "2026-09-24T05:42:08.685Z"
+  },
+  {
+    "profile": "2-PORT",
+    "points": 3831,
+    "timestamp": "2026-09-24T05:42:11.061Z"
   }
 ]
