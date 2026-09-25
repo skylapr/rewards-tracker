@@ -2540,6 +2540,11 @@
     "timestamp": "2026-09-24T05:43:35.094Z"
   },
   {
+    "profile": "3-TU06",
+    "points": 1892,
+    "timestamp": "2026-09-24T05:44:05.895Z"
+  },
+  {
     "profile": "22-BM82",
     "points": 3022,
     "timestamp": "2026-09-24T06:10:34.067Z"
@@ -2623,5 +2628,10 @@
     "profile": "2-PORT",
     "points": 4005,
     "timestamp": "2026-09-25T07:48:11.106Z"
+  },
+  {
+    "profile": "3-TU06",
+    "points": 1978,
+    "timestamp": "2026-09-25T07:48:30.120Z"
   }
 ]
