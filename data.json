@@ -2580,9 +2580,19 @@
     "timestamp": "2026-09-24T06:11:02.059Z"
   },
   {
+    "profile": "15-TH7G",
+    "points": 853,
+    "timestamp": "2026-09-24T06:11:05.009Z"
+  },
+  {
     "profile": "21-CC32",
     "points": 2355,
     "timestamp": "2026-09-24T06:11:18.777Z"
+  },
+  {
+    "profile": "15-TH7G",
+    "points": 854,
+    "timestamp": "2026-09-24T06:11:28.288Z"
   },
   {
     "profile": "22-BM82",
@@ -2668,5 +2678,10 @@
     "profile": "21-CC32",
     "points": 2441,
     "timestamp": "2026-09-25T12:05:07.816Z"
+  },
+  {
+    "profile": "15-TH7G",
+    "points": 940,
+    "timestamp": "2026-09-25T12:05:29.821Z"
   }
 ]
