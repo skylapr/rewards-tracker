@@ -2495,6 +2495,11 @@
     "timestamp": "2026-09-24T05:42:44.093Z"
   },
   {
+    "profile": "8-SITO",
+    "points": 4776,
+    "timestamp": "2026-09-24T05:42:51.033Z"
+  },
+  {
     "profile": "9-RO25",
     "points": 3024,
     "timestamp": "2026-09-24T05:42:51.772Z"
@@ -2513,6 +2518,11 @@
     "profile": "6-KHYS",
     "points": 331,
     "timestamp": "2026-09-24T05:43:18.080Z"
+  },
+  {
+    "profile": "8-SITO",
+    "points": 4797,
+    "timestamp": "2026-09-24T05:43:22.542Z"
   },
   {
     "profile": "3-TU06",
@@ -2588,5 +2598,10 @@
     "profile": "4-NG11",
     "points": 1164,
     "timestamp": "2026-09-25T07:47:37.076Z"
+  },
+  {
+    "profile": "8-SITO",
+    "points": 4883,
+    "timestamp": "2026-09-25T07:47:49.117Z"
   }
 ]
