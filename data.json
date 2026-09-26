@@ -2700,9 +2700,19 @@
     "timestamp": "2026-09-25T07:48:38.059Z"
   },
   {
+    "profile": "6-KHYS",
+    "points": 582,
+    "timestamp": "2026-09-25T07:48:42.029Z"
+  },
+  {
     "profile": "3-TU06",
     "points": 2065,
     "timestamp": "2026-09-25T07:49:06.621Z"
+  },
+  {
+    "profile": "6-KHYS",
+    "points": 593,
+    "timestamp": "2026-09-25T07:49:11.583Z"
   },
   {
     "profile": "22-BM82",
@@ -2788,5 +2798,10 @@
     "profile": "3-TU06",
     "points": 2152,
     "timestamp": "2026-09-26T01:03:38.878Z"
+  },
+  {
+    "profile": "6-KHYS",
+    "points": 679,
+    "timestamp": "2026-09-26T01:03:51.938Z"
   }
 ]
