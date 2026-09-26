@@ -2625,6 +2625,11 @@
     "timestamp": "2026-09-25T07:46:51.064Z"
   },
   {
+    "profile": "1-XU69",
+    "points": 4786,
+    "timestamp": "2026-09-25T07:47:08.105Z"
+  },
+  {
     "profile": "12-HP45",
     "points": 826,
     "timestamp": "2026-09-25T07:47:10.074Z"
@@ -2708,5 +2713,10 @@
     "profile": "21-CC32",
     "points": 2550,
     "timestamp": "2026-09-25T12:07:50.246Z"
+  },
+  {
+    "profile": "1-XU69",
+    "points": 4872,
+    "timestamp": "2026-09-26T01:01:35.892Z"
   }
 ]
