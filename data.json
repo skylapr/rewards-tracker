@@ -2745,6 +2745,11 @@
     "timestamp": "2026-09-25T12:05:53.847Z"
   },
   {
+    "profile": "15-TH7G",
+    "points": 2187,
+    "timestamp": "2026-09-25T12:06:00.274Z"
+  },
+  {
     "profile": "14-XU11",
     "points": 2939,
     "timestamp": "2026-09-25T12:06:11.403Z"
@@ -2808,5 +2813,10 @@
     "profile": "9-RO25",
     "points": 3312,
     "timestamp": "2026-09-26T01:03:58.628Z"
+  },
+  {
+    "profile": "15-TH7G",
+    "points": 2274,
+    "timestamp": "2026-09-26T01:28:59.944Z"
   }
 ]
