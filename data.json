@@ -2645,6 +2645,11 @@
     "timestamp": "2026-09-25T07:47:37.076Z"
   },
   {
+    "profile": "12-HP45",
+    "points": 2017,
+    "timestamp": "2026-09-25T07:47:38.245Z"
+  },
+  {
     "profile": "8-SITO",
     "points": 4883,
     "timestamp": "2026-09-25T07:47:49.117Z"
@@ -2718,5 +2723,10 @@
     "profile": "1-XU69",
     "points": 4872,
     "timestamp": "2026-09-26T01:01:35.892Z"
+  },
+  {
+    "profile": "12-HP45",
+    "points": 2103,
+    "timestamp": "2026-09-26T01:01:49.878Z"
   }
 ]
