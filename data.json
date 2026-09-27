@@ -2915,6 +2915,16 @@
     "timestamp": "2026-09-26T01:30:32.903Z"
   },
   {
+    "profile": "17-TH5F",
+    "points": 2947,
+    "timestamp": "2026-09-26T01:30:35.845Z"
+  },
+  {
+    "profile": "17-TH5F",
+    "points": 2957,
+    "timestamp": "2026-09-26T01:31:05.832Z"
+  },
+  {
     "profile": "16-FA20",
     "points": 1093,
     "timestamp": "2026-09-26T01:31:21.907Z"
@@ -3008,5 +3018,10 @@
     "profile": "15-TH7G",
     "points": 2448,
     "timestamp": "2026-09-27T07:48:18.537Z"
+  },
+  {
+    "profile": "17-TH5F",
+    "points": 3131,
+    "timestamp": "2026-09-27T07:48:33.561Z"
   }
 ]
