@@ -2705,6 +2705,11 @@
     "timestamp": "2026-09-25T07:48:42.029Z"
   },
   {
+    "profile": "2-PORT",
+    "points": 4092,
+    "timestamp": "2026-09-25T07:48:51.314Z"
+  },
+  {
     "profile": "3-TU06",
     "points": 2065,
     "timestamp": "2026-09-25T07:49:06.621Z"
@@ -2795,6 +2800,16 @@
     "timestamp": "2026-09-26T01:02:28.756Z"
   },
   {
+    "profile": "2-PORT",
+    "points": 4179,
+    "timestamp": "2026-09-26T01:02:28.908Z"
+  },
+  {
+    "profile": "2-PORT",
+    "points": 4256,
+    "timestamp": "2026-09-26T01:02:31.825Z"
+  },
+  {
     "profile": "10-FR83",
     "points": 6419,
     "timestamp": "2026-09-26T01:02:36.096Z"
@@ -2813,6 +2828,11 @@
     "profile": "4-NG11",
     "points": 1338,
     "timestamp": "2026-09-26T01:02:59.895Z"
+  },
+  {
+    "profile": "2-PORT",
+    "points": 4266,
+    "timestamp": "2026-09-26T01:03:01.765Z"
   },
   {
     "profile": "5-TU79",
@@ -2878,5 +2898,10 @@
     "profile": "21-CC32",
     "points": 2702,
     "timestamp": "2026-09-26T01:32:35.936Z"
+  },
+  {
+    "profile": "2-PORT",
+    "points": 4353,
+    "timestamp": "2026-09-27T05:41:09.666Z"
   }
 ]
