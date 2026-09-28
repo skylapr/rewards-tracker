@@ -3080,6 +3080,11 @@
     "timestamp": "2026-09-27T07:48:18.537Z"
   },
   {
+    "profile": "22-BM82",
+    "points": 3632,
+    "timestamp": "2026-09-27T07:48:18.740Z"
+  },
+  {
     "profile": "17-TH5F",
     "points": 3131,
     "timestamp": "2026-09-27T07:48:33.561Z"
@@ -3178,5 +3183,10 @@
     "profile": "21-CC32",
     "points": 2963,
     "timestamp": "2026-09-28T11:39:27.813Z"
+  },
+  {
+    "profile": "22-BM82",
+    "points": 3775,
+    "timestamp": "2026-09-28T11:39:40.865Z"
   }
 ]
