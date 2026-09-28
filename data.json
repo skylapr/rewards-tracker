@@ -3060,6 +3060,11 @@
     "timestamp": "2026-09-27T05:43:27.523Z"
   },
   {
+    "profile": "6-KHYS",
+    "points": 940,
+    "timestamp": "2026-09-27T05:43:30.903Z"
+  },
+  {
     "profile": "22-BM82",
     "points": 3544,
     "timestamp": "2026-09-27T07:47:48.533Z"
@@ -3158,5 +3163,10 @@
     "profile": "3-TU06",
     "points": 2500,
     "timestamp": "2026-09-28T11:17:32.820Z"
+  },
+  {
+    "profile": "6-KHYS",
+    "points": 1027,
+    "timestamp": "2026-09-28T11:17:45.822Z"
   }
 ]
