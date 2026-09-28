@@ -2965,6 +2965,11 @@
     "timestamp": "2026-09-27T05:41:27.675Z"
   },
   {
+    "profile": "10-FR83",
+    "points": 1103,
+    "timestamp": "2026-09-27T05:41:28.400Z"
+  },
+  {
     "profile": "2-PORT",
     "points": 4440,
     "timestamp": "2026-09-27T05:41:39.001Z"
@@ -3138,5 +3143,10 @@
     "profile": "2-PORT",
     "points": 4527,
     "timestamp": "2026-09-28T11:17:08.755Z"
+  },
+  {
+    "profile": "10-FR83",
+    "points": 1190,
+    "timestamp": "2026-09-28T11:17:22.817Z"
   }
 ]
