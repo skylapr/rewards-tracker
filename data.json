@@ -2970,6 +2970,11 @@
     "timestamp": "2026-09-27T05:41:49.689Z"
   },
   {
+    "profile": "8-SITO",
+    "points": 5319,
+    "timestamp": "2026-09-27T05:42:00.670Z"
+  },
+  {
     "profile": "12-HP45",
     "points": 2220,
     "timestamp": "2026-09-27T05:42:02.671Z"
@@ -3043,5 +3048,15 @@
     "profile": "12-HP45",
     "points": 2337,
     "timestamp": "2026-09-28T11:15:10.846Z"
+  },
+  {
+    "profile": "8-SITO",
+    "points": 5405,
+    "timestamp": "2026-09-28T11:15:27.810Z"
+  },
+  {
+    "profile": "8-SITO",
+    "points": 102,
+    "timestamp": "2026-09-28T11:15:28.757Z"
   }
 ]
