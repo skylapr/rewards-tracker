@@ -2965,6 +2965,11 @@
     "timestamp": "2026-09-27T05:41:27.675Z"
   },
   {
+    "profile": "2-PORT",
+    "points": 4440,
+    "timestamp": "2026-09-27T05:41:39.001Z"
+  },
+  {
     "profile": "1-XU69",
     "points": 5046,
     "timestamp": "2026-09-27T05:41:49.689Z"
@@ -3118,5 +3123,20 @@
     "profile": "5-TU79",
     "points": 1314,
     "timestamp": "2026-09-28T11:16:53.545Z"
+  },
+  {
+    "profile": "2-PORT",
+    "points": 4527,
+    "timestamp": "2026-09-28T11:17:07.806Z"
+  },
+  {
+    "profile": "2-PORT",
+    "points": 4684,
+    "timestamp": "2026-09-28T11:17:08.753Z"
+  },
+  {
+    "profile": "2-PORT",
+    "points": 4527,
+    "timestamp": "2026-09-28T11:17:08.755Z"
   }
 ]
