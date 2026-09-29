@@ -3210,6 +3210,11 @@
     "timestamp": "2026-09-28T11:17:08.755Z"
   },
   {
+    "profile": "1-XU69",
+    "points": 6344,
+    "timestamp": "2026-09-28T11:17:13.920Z"
+  },
+  {
     "profile": "10-FR83",
     "points": 1190,
     "timestamp": "2026-09-28T11:17:22.817Z"
@@ -3268,5 +3273,15 @@
     "profile": "12-HP45",
     "points": 2524,
     "timestamp": "2026-09-29T11:31:37.234Z"
+  },
+  {
+    "profile": "1-XU69",
+    "points": 1038,
+    "timestamp": "2026-09-29T11:31:50.241Z"
+  },
+  {
+    "profile": "1-XU69",
+    "points": 6431,
+    "timestamp": "2026-09-29T11:31:51.171Z"
   }
 ]
