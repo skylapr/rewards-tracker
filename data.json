@@ -3230,6 +3230,11 @@
     "timestamp": "2026-09-28T11:17:32.820Z"
   },
   {
+    "profile": "2-PORT",
+    "points": 4684,
+    "timestamp": "2026-09-28T11:17:44.477Z"
+  },
+  {
     "profile": "6-KHYS",
     "points": 1027,
     "timestamp": "2026-09-28T11:17:45.822Z"
@@ -3298,5 +3303,10 @@
     "profile": "4-NG11",
     "points": 2007,
     "timestamp": "2026-09-29T11:32:07.170Z"
+  },
+  {
+    "profile": "2-PORT",
+    "points": 4771,
+    "timestamp": "2026-09-29T11:32:21.234Z"
   }
 ]
