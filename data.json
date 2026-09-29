@@ -3155,6 +3155,11 @@
     "timestamp": "2026-09-28T11:15:59.857Z"
   },
   {
+    "profile": "8-SITO",
+    "points": 103,
+    "timestamp": "2026-09-28T11:16:00.292Z"
+  },
+  {
     "profile": "9-RO25",
     "points": 3543,
     "timestamp": "2026-09-28T11:16:13.799Z"
@@ -3338,5 +3343,10 @@
     "profile": "5-TU79",
     "points": 1558,
     "timestamp": "2026-09-29T11:32:47.227Z"
+  },
+  {
+    "profile": "8-SITO",
+    "points": 189,
+    "timestamp": "2026-09-29T11:32:58.249Z"
   }
 ]
