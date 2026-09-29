@@ -3180,6 +3180,11 @@
     "timestamp": "2026-09-28T11:16:27.822Z"
   },
   {
+    "profile": "7-SH69",
+    "points": 3181,
+    "timestamp": "2026-09-28T11:16:31.504Z"
+  },
+  {
     "profile": "1-XU69",
     "points": 5220,
     "timestamp": "2026-09-28T11:16:38.827Z"
@@ -3318,5 +3323,10 @@
     "profile": "1-XU69",
     "points": 1058,
     "timestamp": "2026-09-29T11:32:26.699Z"
+  },
+  {
+    "profile": "7-SH69",
+    "points": 3267,
+    "timestamp": "2026-09-29T11:32:33.242Z"
   }
 ]
