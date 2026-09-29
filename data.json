@@ -3230,6 +3230,11 @@
     "timestamp": "2026-09-28T11:17:22.817Z"
   },
   {
+    "profile": "5-TU79",
+    "points": 1471,
+    "timestamp": "2026-09-28T11:17:23.194Z"
+  },
+  {
     "profile": "3-TU06",
     "points": 2500,
     "timestamp": "2026-09-28T11:17:32.820Z"
@@ -3328,5 +3333,10 @@
     "profile": "7-SH69",
     "points": 3267,
     "timestamp": "2026-09-29T11:32:33.242Z"
+  },
+  {
+    "profile": "5-TU79",
+    "points": 1558,
+    "timestamp": "2026-09-29T11:32:47.227Z"
   }
 ]
