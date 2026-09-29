@@ -3300,6 +3300,11 @@
     "timestamp": "2026-09-28T11:40:02.937Z"
   },
   {
+    "profile": "15-TH7G",
+    "points": 2779,
+    "timestamp": "2026-09-28T11:40:12.372Z"
+  },
+  {
     "profile": "17-TH5F",
     "points": 3275,
     "timestamp": "2026-09-28T11:40:24.166Z"
@@ -3408,5 +3413,10 @@
     "profile": "21-CC32",
     "points": 3207,
     "timestamp": "2026-09-29T11:58:01.228Z"
+  },
+  {
+    "profile": "15-TH7G",
+    "points": 2866,
+    "timestamp": "2026-09-29T11:58:13.113Z"
   }
 ]
