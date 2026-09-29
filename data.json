@@ -3155,6 +3155,16 @@
     "timestamp": "2026-09-28T11:16:13.799Z"
   },
   {
+    "profile": "9-RO25",
+    "points": 3630,
+    "timestamp": "2026-09-28T11:16:16.748Z"
+  },
+  {
+    "profile": "9-RO25",
+    "points": 3543,
+    "timestamp": "2026-09-28T11:16:16.779Z"
+  },
+  {
     "profile": "4-NG11",
     "points": 1686,
     "timestamp": "2026-09-28T11:16:27.822Z"
@@ -3163,6 +3173,11 @@
     "profile": "1-XU69",
     "points": 5220,
     "timestamp": "2026-09-28T11:16:38.827Z"
+  },
+  {
+    "profile": "9-RO25",
+    "points": 3630,
+    "timestamp": "2026-09-28T11:16:47.075Z"
   },
   {
     "profile": "5-TU79",
@@ -3228,5 +3243,10 @@
     "profile": "17-TH5F",
     "points": 3324,
     "timestamp": "2026-09-28T11:45:05.015Z"
+  },
+  {
+    "profile": "9-RO25",
+    "points": 3717,
+    "timestamp": "2026-09-29T11:31:07.236Z"
   }
 ]
