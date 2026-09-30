@@ -3465,6 +3465,11 @@
     "timestamp": "2026-09-29T11:34:04.355Z"
   },
   {
+    "profile": "6-KHYS",
+    "points": 1359,
+    "timestamp": "2026-09-29T11:34:10.449Z"
+  },
+  {
     "profile": "21-CC32",
     "points": 3207,
     "timestamp": "2026-09-29T11:58:01.228Z"
@@ -3598,5 +3603,10 @@
     "profile": "10-FR83",
     "points": 1625,
     "timestamp": "2026-09-30T06:01:49.893Z"
+  },
+  {
+    "profile": "6-KHYS",
+    "points": 1445,
+    "timestamp": "2026-09-30T06:01:59.881Z"
   }
 ]
