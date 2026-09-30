@@ -3390,6 +3390,11 @@
     "timestamp": "2026-09-29T11:32:47.227Z"
   },
   {
+    "profile": "5-TU79",
+    "points": 1635,
+    "timestamp": "2026-09-29T11:32:50.197Z"
+  },
+  {
     "profile": "8-SITO",
     "points": 189,
     "timestamp": "2026-09-29T11:32:58.249Z"
@@ -3398,6 +3403,11 @@
     "profile": "3-TU06",
     "points": 2749,
     "timestamp": "2026-09-29T11:33:15.232Z"
+  },
+  {
+    "profile": "5-TU79",
+    "points": 1645,
+    "timestamp": "2026-09-29T11:33:18.056Z"
   },
   {
     "profile": "10-FR83",
@@ -3458,5 +3468,10 @@
     "profile": "4-NG11",
     "points": 2104,
     "timestamp": "2026-09-30T05:59:17.817Z"
+  },
+  {
+    "profile": "5-TU79",
+    "points": 1732,
+    "timestamp": "2026-09-30T05:59:29.827Z"
   }
 ]
