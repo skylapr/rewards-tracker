@@ -3415,6 +3415,11 @@
     "timestamp": "2026-09-29T11:32:50.197Z"
   },
   {
+    "profile": "2-PORT",
+    "points": 4858,
+    "timestamp": "2026-09-29T11:32:52.846Z"
+  },
+  {
     "profile": "8-SITO",
     "points": 189,
     "timestamp": "2026-09-29T11:32:58.249Z"
@@ -3558,5 +3563,10 @@
     "profile": "8-SITO",
     "points": 451,
     "timestamp": "2026-09-30T06:00:50.133Z"
+  },
+  {
+    "profile": "2-PORT",
+    "points": 4945,
+    "timestamp": "2026-09-30T06:00:54.873Z"
   }
 ]
