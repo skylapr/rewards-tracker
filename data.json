@@ -3505,6 +3505,11 @@
     "timestamp": "2026-09-30T05:59:42.812Z"
   },
   {
+    "profile": "11-WE82",
+    "points": 3195,
+    "timestamp": "2026-09-30T05:59:50.765Z"
+  },
+  {
     "profile": "12-HP45",
     "points": 2641,
     "timestamp": "2026-09-30T06:00:00.819Z"
@@ -3518,5 +3523,10 @@
     "profile": "8-SITO",
     "points": 430,
     "timestamp": "2026-09-30T06:00:13.767Z"
+  },
+  {
+    "profile": "11-WE82",
+    "points": 3205,
+    "timestamp": "2026-09-30T06:00:19.266Z"
   }
 ]
