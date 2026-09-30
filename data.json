@@ -3345,6 +3345,11 @@
     "timestamp": "2026-09-29T11:31:38.175Z"
   },
   {
+    "profile": "9-RO25",
+    "points": 3804,
+    "timestamp": "2026-09-29T11:31:39.518Z"
+  },
+  {
     "profile": "1-XU69",
     "points": 1038,
     "timestamp": "2026-09-29T11:31:50.241Z"
@@ -3528,5 +3533,10 @@
     "profile": "11-WE82",
     "points": 3205,
     "timestamp": "2026-09-30T06:00:19.266Z"
+  },
+  {
+    "profile": "9-RO25",
+    "points": 3891,
+    "timestamp": "2026-09-30T06:00:27.820Z"
   }
 ]
