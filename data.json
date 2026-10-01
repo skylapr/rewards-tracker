@@ -3625,6 +3625,11 @@
     "timestamp": "2026-09-30T06:00:57.758Z"
   },
   {
+    "profile": "9-RO25",
+    "points": 3978,
+    "timestamp": "2026-09-30T06:01:00.841Z"
+  },
+  {
     "profile": "2-PORT",
     "points": 5186,
     "timestamp": "2026-09-30T06:01:11.769Z"
@@ -3768,5 +3773,10 @@
     "profile": "8-SITO",
     "points": 1208,
     "timestamp": "2026-10-01T07:57:30.915Z"
+  },
+  {
+    "profile": "9-RO25",
+    "points": 4065,
+    "timestamp": "2026-10-01T07:57:37.129Z"
   }
 ]
