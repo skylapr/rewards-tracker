@@ -3685,6 +3685,11 @@
     "timestamp": "2026-09-30T06:02:36.517Z"
   },
   {
+    "profile": "3-TU06",
+    "points": 3008,
+    "timestamp": "2026-09-30T06:02:48.057Z"
+  },
+  {
     "profile": "21-CC32",
     "points": 3381,
     "timestamp": "2026-09-30T06:19:18.814Z"
@@ -3808,5 +3813,10 @@
     "profile": "9-RO25",
     "points": 4465,
     "timestamp": "2026-10-01T07:58:12.055Z"
+  },
+  {
+    "profile": "3-TU06",
+    "points": 3094,
+    "timestamp": "2026-10-01T07:58:19.747Z"
   }
 ]
