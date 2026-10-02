@@ -3745,6 +3745,11 @@
     "timestamp": "2026-10-01T07:55:36.792Z"
   },
   {
+    "profile": "1-XU69",
+    "points": 1333,
+    "timestamp": "2026-10-01T07:55:44.690Z"
+  },
+  {
     "profile": "11-WE82",
     "points": 3292,
     "timestamp": "2026-10-01T07:55:56.746Z"
@@ -3883,5 +3888,15 @@
     "profile": "17-TH5F",
     "points": 3779,
     "timestamp": "2026-10-01T09:20:46.030Z"
+  },
+  {
+    "profile": "1-XU69",
+    "points": 1744,
+    "timestamp": "2026-10-02T10:46:33.166Z"
+  },
+  {
+    "profile": "1-XU69",
+    "points": 2241,
+    "timestamp": "2026-10-02T10:46:34.117Z"
   }
 ]
