@@ -3930,6 +3930,11 @@
     "timestamp": "2026-10-02T10:47:04.173Z"
   },
   {
+    "profile": "8-SITO",
+    "points": 1381,
+    "timestamp": "2026-10-02T10:47:05.123Z"
+  },
+  {
     "profile": "11-WE82",
     "points": 3778,
     "timestamp": "2026-10-02T10:47:18.204Z"
@@ -3938,5 +3943,10 @@
     "profile": "7-SH69",
     "points": 4106,
     "timestamp": "2026-10-02T10:47:31.163Z"
+  },
+  {
+    "profile": "8-SITO",
+    "points": 1382,
+    "timestamp": "2026-10-02T10:47:37.329Z"
   }
 ]
