@@ -3765,6 +3765,11 @@
     "timestamp": "2026-10-01T07:55:56.746Z"
   },
   {
+    "profile": "11-WE82",
+    "points": 3691,
+    "timestamp": "2026-10-01T07:56:07.697Z"
+  },
+  {
     "profile": "4-NG11",
     "points": 2278,
     "timestamp": "2026-10-01T07:56:28.752Z"
@@ -3923,5 +3928,10 @@
     "profile": "8-SITO",
     "points": 1294,
     "timestamp": "2026-10-02T10:47:04.173Z"
+  },
+  {
+    "profile": "11-WE82",
+    "points": 3778,
+    "timestamp": "2026-10-02T10:47:18.204Z"
   }
 ]
