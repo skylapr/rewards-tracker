@@ -4055,6 +4055,11 @@
     "timestamp": "2026-10-02T11:07:02.195Z"
   },
   {
+    "profile": "16-FA20",
+    "points": 2601,
+    "timestamp": "2026-10-02T11:07:05.122Z"
+  },
+  {
     "profile": "21-CC32",
     "points": 4412,
     "timestamp": "2026-10-02T11:07:12.670Z"
@@ -4068,5 +4073,10 @@
     "profile": "17-TH5F",
     "points": 4355,
     "timestamp": "2026-10-02T11:07:23.708Z"
+  },
+  {
+    "profile": "16-FA20",
+    "points": 2612,
+    "timestamp": "2026-10-02T11:07:35.185Z"
   }
 ]
