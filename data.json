@@ -3965,6 +3965,16 @@
     "timestamp": "2026-10-02T10:48:04.733Z"
   },
   {
+    "profile": "4-NG11",
+    "points": 2709,
+    "timestamp": "2026-10-02T10:48:05.262Z"
+  },
+  {
+    "profile": "4-NG11",
+    "points": 2786,
+    "timestamp": "2026-10-02T10:48:09.127Z"
+  },
+  {
     "profile": "9-RO25",
     "points": 4638,
     "timestamp": "2026-10-02T10:48:16.844Z"
@@ -3983,5 +3993,10 @@
     "profile": "5-TU79",
     "points": 2318,
     "timestamp": "2026-10-02T10:48:28.458Z"
+  },
+  {
+    "profile": "4-NG11",
+    "points": 2797,
+    "timestamp": "2026-10-02T10:48:37.016Z"
   }
 ]
