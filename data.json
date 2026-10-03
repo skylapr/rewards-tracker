@@ -3950,6 +3950,11 @@
     "timestamp": "2026-10-02T10:47:18.204Z"
   },
   {
+    "profile": "6-KHYS",
+    "points": 2482,
+    "timestamp": "2026-10-02T10:47:19.047Z"
+  },
+  {
     "profile": "7-SH69",
     "points": 4106,
     "timestamp": "2026-10-02T10:47:31.163Z"
@@ -4098,5 +4103,10 @@
     "profile": "11-WE82",
     "points": 3952,
     "timestamp": "2026-10-03T01:33:28.086Z"
+  },
+  {
+    "profile": "6-KHYS",
+    "points": 2568,
+    "timestamp": "2026-10-03T01:33:44.095Z"
   }
 ]
