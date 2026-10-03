@@ -4240,6 +4240,11 @@
     "timestamp": "2026-10-03T01:59:57.006Z"
   },
   {
+    "profile": "21-CC32",
+    "points": 4576,
+    "timestamp": "2026-10-03T02:00:04.022Z"
+  },
+  {
     "profile": "22-BM82",
     "points": 4972,
     "timestamp": "2026-10-03T02:00:10.059Z"
@@ -4248,5 +4253,10 @@
     "profile": "15-TH7G",
     "points": 4151,
     "timestamp": "2026-10-03T02:00:21.085Z"
+  },
+  {
+    "profile": "21-CC32",
+    "points": 4586,
+    "timestamp": "2026-10-03T02:00:27.665Z"
   }
 ]
