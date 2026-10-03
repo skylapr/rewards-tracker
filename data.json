@@ -3945,6 +3945,11 @@
     "timestamp": "2026-10-02T10:47:05.123Z"
   },
   {
+    "profile": "1-XU69",
+    "points": 2251,
+    "timestamp": "2026-10-02T10:47:06.429Z"
+  },
+  {
     "profile": "11-WE82",
     "points": 3778,
     "timestamp": "2026-10-02T10:47:18.204Z"
@@ -4163,5 +4168,10 @@
     "profile": "7-SH69",
     "points": 4368,
     "timestamp": "2026-10-03T01:36:13.560Z"
+  },
+  {
+    "profile": "1-XU69",
+    "points": 2338,
+    "timestamp": "2026-10-03T01:36:16.082Z"
   }
 ]
