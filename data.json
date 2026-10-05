@@ -4460,6 +4460,11 @@
     "timestamp": "2026-10-04T02:13:30.009Z"
   },
   {
+    "profile": "22-BM82",
+    "points": 5276,
+    "timestamp": "2026-10-04T02:13:31.576Z"
+  },
+  {
     "profile": "14-XU11",
     "points": 4574,
     "timestamp": "2026-10-04T02:13:36.479Z"
@@ -4583,5 +4588,10 @@
     "profile": "2-PORT",
     "points": 1297,
     "timestamp": "2026-10-05T09:38:53.710Z"
+  },
+  {
+    "profile": "22-BM82",
+    "points": 35,
+    "timestamp": "2026-10-05T10:00:39.934Z"
   }
 ]
