@@ -5005,6 +5005,11 @@
     "timestamp": "2026-10-07T10:06:00.328Z"
   },
   {
+    "profile": "14-XU11",
+    "points": 5110,
+    "timestamp": "2026-10-07T10:06:10.265Z"
+  },
+  {
     "profile": "17-TH5F",
     "points": 5222,
     "timestamp": "2026-10-07T10:06:23.841Z"
@@ -5013,5 +5018,10 @@
     "profile": "16-FA20",
     "points": 3649,
     "timestamp": "2026-10-07T10:06:26.336Z"
+  },
+  {
+    "profile": "14-XU11",
+    "points": 5111,
+    "timestamp": "2026-10-07T10:06:43.398Z"
   }
 ]
