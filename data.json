@@ -4915,6 +4915,11 @@
     "timestamp": "2026-10-07T09:46:23.334Z"
   },
   {
+    "profile": "4-NG11",
+    "points": 4190,
+    "timestamp": "2026-10-07T09:46:28.281Z"
+  },
+  {
     "profile": "6-KHYS",
     "points": 3422,
     "timestamp": "2026-10-07T09:46:29.209Z"
@@ -4933,5 +4938,10 @@
     "profile": "2-PORT",
     "points": 1557,
     "timestamp": "2026-10-07T09:46:54.327Z"
+  },
+  {
+    "profile": "4-NG11",
+    "points": 4211,
+    "timestamp": "2026-10-07T09:46:57.138Z"
   }
 ]
