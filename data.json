@@ -4880,6 +4880,11 @@
     "timestamp": "2026-10-07T09:45:28.339Z"
   },
   {
+    "profile": "7-SH69",
+    "points": 5274,
+    "timestamp": "2026-10-07T09:45:30.269Z"
+  },
+  {
     "profile": "8-SITO",
     "points": 2375,
     "timestamp": "2026-10-07T09:45:35.328Z"
@@ -4898,5 +4903,10 @@
     "profile": "5-TU79",
     "points": 2981,
     "timestamp": "2026-10-07T09:46:11.323Z"
+  },
+  {
+    "profile": "7-SH69",
+    "points": 5337,
+    "timestamp": "2026-10-07T09:46:13.721Z"
   }
 ]
