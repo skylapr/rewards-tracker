@@ -4985,6 +4985,11 @@
     "timestamp": "2026-10-08T08:51:09.823Z"
   },
   {
+    "profile": "9-RO25",
+    "points": 429,
+    "timestamp": "2026-10-08T08:51:11.314Z"
+  },
+  {
     "profile": "4-NG11",
     "points": 4297,
     "timestamp": "2026-10-08T08:51:20.789Z"
@@ -5073,5 +5078,10 @@
     "profile": "7-SH69",
     "points": 149,
     "timestamp": "2026-10-08T08:53:20.234Z"
+  },
+  {
+    "profile": "9-RO25",
+    "points": 468,
+    "timestamp": "2026-10-08T08:54:53.241Z"
   }
 ]
