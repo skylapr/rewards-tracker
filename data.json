@@ -5115,6 +5115,16 @@
     "timestamp": "2026-10-08T09:09:28.132Z"
   },
   {
+    "profile": "15-TH7G",
+    "points": 5258,
+    "timestamp": "2026-10-08T09:09:29.789Z"
+  },
+  {
+    "profile": "15-TH7G",
+    "points": 5322,
+    "timestamp": "2026-10-08T09:09:33.747Z"
+  },
+  {
     "profile": "16-FA20",
     "points": 3838,
     "timestamp": "2026-10-08T09:09:43.789Z"
@@ -5128,5 +5138,10 @@
     "profile": "17-TH5F",
     "points": 5305,
     "timestamp": "2026-10-08T09:09:55.787Z"
+  },
+  {
+    "profile": "15-TH7G",
+    "points": 5343,
+    "timestamp": "2026-10-08T09:10:00.187Z"
   }
 ]
