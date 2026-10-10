@@ -5330,6 +5330,16 @@
     "timestamp": "2026-10-10T01:47:06.571Z"
   },
   {
+    "profile": "6-KHYS",
+    "points": 3998,
+    "timestamp": "2026-10-10T01:47:07.613Z"
+  },
+  {
+    "profile": "6-KHYS",
+    "points": 4120,
+    "timestamp": "2026-10-10T01:47:10.572Z"
+  },
+  {
     "profile": "4-NG11",
     "points": 4700,
     "timestamp": "2026-10-10T01:47:23.634Z"
@@ -5338,5 +5348,10 @@
     "profile": "8-SITO",
     "points": 2837,
     "timestamp": "2026-10-10T01:47:28.669Z"
+  },
+  {
+    "profile": "6-KHYS",
+    "points": 4121,
+    "timestamp": "2026-10-10T01:47:42.059Z"
   }
 ]
