@@ -5495,8 +5495,28 @@
     "timestamp": "2026-10-10T11:01:55.041Z"
   },
   {
+    "profile": "13-LA36",
+    "points": 80,
+    "timestamp": "2026-10-10T11:05:21.772Z"
+  },
+  {
+    "profile": "13-LA36",
+    "points": 140,
+    "timestamp": "2026-10-10T11:05:37.778Z"
+  },
+  {
+    "profile": "13-LA36",
+    "points": 378,
+    "timestamp": "2026-10-10T11:06:14.685Z"
+  },
+  {
     "profile": "12-TH14",
     "points": 402,
     "timestamp": "2026-10-10T11:14:58.826Z"
+  },
+  {
+    "profile": "13-LA36",
+    "points": 402,
+    "timestamp": "2026-10-10T11:16:01.654Z"
   }
 ]
