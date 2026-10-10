@@ -5455,6 +5455,11 @@
     "timestamp": "2026-10-10T02:05:32.279Z"
   },
   {
+    "profile": "17-TH5F",
+    "points": 5653,
+    "timestamp": "2026-10-10T02:05:46.634Z"
+  },
+  {
     "profile": "15-TH7G",
     "points": 230,
     "timestamp": "2026-10-10T02:05:46.660Z"
@@ -5468,5 +5473,10 @@
     "profile": "21-CC32",
     "points": 1487,
     "timestamp": "2026-10-10T02:06:08.539Z"
+  },
+  {
+    "profile": "17-TH5F",
+    "points": 5740,
+    "timestamp": "2026-10-10T02:06:19.558Z"
   }
 ]
