@@ -5485,12 +5485,27 @@
     "timestamp": "2026-10-10T11:01:03.519Z"
   },
   {
+    "profile": "12-TH14",
+    "points": 125,
+    "timestamp": "2026-10-10T11:01:03.519Z"
+  },
+  {
     "profile": "12",
     "points": 270,
     "timestamp": "2026-10-10T11:01:10.995Z"
   },
   {
+    "profile": "12-TH14",
+    "points": 270,
+    "timestamp": "2026-10-10T11:01:10.995Z"
+  },
+  {
     "profile": "12",
+    "points": 376,
+    "timestamp": "2026-10-10T11:01:55.041Z"
+  },
+  {
+    "profile": "12-TH14",
     "points": 376,
     "timestamp": "2026-10-10T11:01:55.041Z"
   },
@@ -5508,5 +5523,10 @@
     "profile": "13",
     "points": 378,
     "timestamp": "2026-10-10T11:06:14.685Z"
+  },
+  {
+    "profile": "12-TH14",
+    "points": 402,
+    "timestamp": "2026-10-10T11:14:58.826Z"
   }
 ]
