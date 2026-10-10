@@ -5390,6 +5390,16 @@
     "timestamp": "2026-10-10T01:48:38.851Z"
   },
   {
+    "profile": "2-PORT",
+    "points": 2079,
+    "timestamp": "2026-10-10T01:48:40.617Z"
+  },
+  {
+    "profile": "2-PORT",
+    "points": 2156,
+    "timestamp": "2026-10-10T01:48:41.567Z"
+  },
+  {
     "profile": "3-TU06",
     "points": 121,
     "timestamp": "2026-10-10T01:48:53.647Z"
@@ -5403,5 +5413,10 @@
     "profile": "7-SH69",
     "points": 497,
     "timestamp": "2026-10-10T01:49:04.952Z"
+  },
+  {
+    "profile": "2-PORT",
+    "points": 2168,
+    "timestamp": "2026-10-10T01:49:15.532Z"
   }
 ]
