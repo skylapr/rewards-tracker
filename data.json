@@ -5675,6 +5675,11 @@
     "timestamp": "2026-10-11T01:02:46.565Z"
   },
   {
+    "profile": "14-XU11",
+    "points": 456,
+    "timestamp": "2026-10-11T01:03:03.084Z"
+  },
+  {
     "profile": "22-BM82",
     "points": 1183,
     "timestamp": "2026-10-11T01:03:03.684Z"
@@ -5895,6 +5900,11 @@
     "timestamp": "2026-10-12T09:48:44.164Z"
   },
   {
+    "profile": "14-XU11",
+    "points": 542,
+    "timestamp": "2026-10-12T09:48:46.146Z"
+  },
+  {
     "profile": "15-TH7G",
     "points": 682,
     "timestamp": "2026-10-12T09:49:00.474Z"
@@ -5903,5 +5913,10 @@
     "profile": "17-TH5F",
     "points": 762,
     "timestamp": "2026-10-12T09:49:11.166Z"
+  },
+  {
+    "profile": "14-XU11",
+    "points": 630,
+    "timestamp": "2026-10-12T09:49:14.126Z"
   }
 ]
