@@ -5790,6 +5790,11 @@
     "timestamp": "2026-10-12T09:30:06.043Z"
   },
   {
+    "profile": "4-NG11",
+    "points": 5256,
+    "timestamp": "2026-10-12T09:30:07.149Z"
+  },
+  {
     "profile": "5-TU79",
     "points": 4449,
     "timestamp": "2026-10-12T09:30:16.374Z"
@@ -5803,5 +5808,10 @@
     "profile": "1-XU69",
     "points": 4202,
     "timestamp": "2026-10-12T09:30:28.090Z"
+  },
+  {
+    "profile": "4-NG11",
+    "points": 5357,
+    "timestamp": "2026-10-12T09:30:38.620Z"
   }
 ]
