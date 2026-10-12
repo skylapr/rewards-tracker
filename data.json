@@ -5705,6 +5705,11 @@
     "timestamp": "2026-10-11T01:03:50.658Z"
   },
   {
+    "profile": "15-TH7G",
+    "points": 437,
+    "timestamp": "2026-10-11T01:03:51.381Z"
+  },
+  {
     "profile": "16-FA20",
     "points": 4408,
     "timestamp": "2026-10-11T01:04:04.980Z"
@@ -5873,5 +5878,10 @@
     "profile": "12-TH14",
     "points": 502,
     "timestamp": "2026-10-12T09:48:21.396Z"
+  },
+  {
+    "profile": "15-TH7G",
+    "points": 524,
+    "timestamp": "2026-10-12T09:48:33.141Z"
   }
 ]
