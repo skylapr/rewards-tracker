@@ -5735,6 +5735,11 @@
     "timestamp": "2026-10-12T09:28:43.145Z"
   },
   {
+    "profile": "9-RO25",
+    "points": 1174,
+    "timestamp": "2026-10-12T09:28:48.089Z"
+  },
+  {
     "profile": "6-KHYS",
     "points": 4351,
     "timestamp": "2026-10-12T09:29:12.136Z"
@@ -5743,5 +5748,10 @@
     "profile": "8-SITO",
     "points": 3098,
     "timestamp": "2026-10-12T09:29:24.142Z"
+  },
+  {
+    "profile": "9-RO25",
+    "points": 1195,
+    "timestamp": "2026-10-12T09:29:26.659Z"
   }
 ]
