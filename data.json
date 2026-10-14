@@ -6195,6 +6195,16 @@
     "timestamp": "2026-10-14T11:51:57.687Z"
   },
   {
+    "profile": "7-SH69",
+    "points": 2310,
+    "timestamp": "2026-10-14T11:52:58.726Z"
+  },
+  {
+    "profile": "7-SH69",
+    "points": 2350,
+    "timestamp": "2026-10-14T11:53:06.697Z"
+  },
+  {
     "profile": "1-XU69",
     "points": 4560,
     "timestamp": "2026-10-14T11:53:19.557Z"
@@ -6218,5 +6228,10 @@
     "profile": "6-KHYS",
     "points": 4760,
     "timestamp": "2026-10-14T11:59:44.524Z"
+  },
+  {
+    "profile": "7-SH69",
+    "points": 2397,
+    "timestamp": "2026-10-14T12:00:03.088Z"
   }
 ]
