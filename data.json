@@ -6080,6 +6080,11 @@
     "timestamp": "2026-10-13T01:56:22.676Z"
   },
   {
+    "profile": "14-XU11",
+    "points": 793,
+    "timestamp": "2026-10-13T01:56:24.618Z"
+  },
+  {
     "profile": "18-TEJ4",
     "points": 408,
     "timestamp": "2026-10-13T01:56:35.834Z"
@@ -6093,6 +6098,11 @@
     "profile": "12-TH14",
     "points": 609,
     "timestamp": "2026-10-13T01:56:47.628Z"
+  },
+  {
+    "profile": "14-XU11",
+    "points": 873,
+    "timestamp": "2026-10-13T01:56:57.227Z"
   },
   {
     "profile": "12-TH14",
@@ -6308,5 +6318,10 @@
     "profile": "12-TH14",
     "points": 737,
     "timestamp": "2026-10-14T12:21:14.081Z"
+  },
+  {
+    "profile": "14-XU11",
+    "points": 960,
+    "timestamp": "2026-10-14T12:21:37.066Z"
   }
 ]
