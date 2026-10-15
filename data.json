@@ -6355,6 +6355,11 @@
     "timestamp": "2026-10-14T12:22:38.157Z"
   },
   {
+    "profile": "13-LA36",
+    "points": 857,
+    "timestamp": "2026-10-14T12:22:43.667Z"
+  },
+  {
     "profile": "22-BM82",
     "points": 1702,
     "timestamp": "2026-10-14T12:22:55.390Z"
@@ -6498,5 +6503,10 @@
     "profile": "12-TH14",
     "points": 823,
     "timestamp": "2026-10-15T06:10:33.416Z"
+  },
+  {
+    "profile": "13-LA36",
+    "points": 943,
+    "timestamp": "2026-10-15T06:10:57.404Z"
   }
 ]
