@@ -6850,6 +6850,11 @@
     "timestamp": "2026-10-16T06:17:42.643Z"
   },
   {
+    "profile": "17-TH5F",
+    "points": 1618,
+    "timestamp": "2026-10-16T06:17:47.556Z"
+  },
+  {
     "profile": "14-XU11",
     "points": 1395,
     "timestamp": "2026-10-16T06:17:54.381Z"
@@ -7043,5 +7048,10 @@
     "profile": "15-TH7G",
     "points": 1669,
     "timestamp": "2026-10-17T02:22:07.747Z"
+  },
+  {
+    "profile": "17-TH5F",
+    "points": 1789,
+    "timestamp": "2026-10-17T02:22:11.193Z"
   }
 ]
