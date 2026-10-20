@@ -7645,6 +7645,11 @@
     "timestamp": "2026-10-20T09:14:41.328Z"
   },
   {
+    "profile": "15-TH7G",
+    "points": 2174,
+    "timestamp": "2026-10-20T09:15:04.110Z"
+  },
+  {
     "profile": "14-XU11",
     "points": 2158,
     "timestamp": "2026-10-20T09:15:28.113Z"
@@ -7675,8 +7680,18 @@
     "timestamp": "2026-10-20T09:16:45.046Z"
   },
   {
+    "profile": "15-TH7G",
+    "points": 2241,
+    "timestamp": "2026-10-20T09:16:45.343Z"
+  },
+  {
     "profile": "21-CC32",
     "points": 3207,
     "timestamp": "2026-10-20T09:16:54.935Z"
+  },
+  {
+    "profile": "15-TH7G",
+    "points": 2261,
+    "timestamp": "2026-10-20T09:18:02.095Z"
   }
 ]
