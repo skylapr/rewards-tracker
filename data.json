@@ -7800,6 +7800,11 @@
     "timestamp": "2026-10-20T09:46:09.529Z"
   },
   {
+    "profile": "22-BM82",
+    "points": 2623,
+    "timestamp": "2026-10-20T09:46:09.754Z"
+  },
+  {
     "profile": "17-TH5F",
     "points": 2538,
     "timestamp": "2026-10-20T09:46:30.325Z"
@@ -7958,5 +7963,10 @@
     "profile": "12-TH14",
     "points": 2755,
     "timestamp": "2026-10-21T11:13:03.866Z"
+  },
+  {
+    "profile": "22-BM82",
+    "points": 2710,
+    "timestamp": "2026-10-21T11:13:18.184Z"
   }
 ]
