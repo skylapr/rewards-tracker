@@ -7550,6 +7550,11 @@
     "timestamp": "2026-10-20T08:51:48.107Z"
   },
   {
+    "profile": "8-SITO",
+    "points": 4455,
+    "timestamp": "2026-10-20T08:52:00.143Z"
+  },
+  {
     "profile": "10-FR83",
     "points": 5418,
     "timestamp": "2026-10-20T08:52:03.995Z"
@@ -7818,5 +7823,10 @@
     "profile": "7-SH69",
     "points": 3827,
     "timestamp": "2026-10-21T10:46:37.939Z"
+  },
+  {
+    "profile": "8-SITO",
+    "points": 4653,
+    "timestamp": "2026-10-21T10:47:16.411Z"
   }
 ]
