@@ -7520,6 +7520,11 @@
     "timestamp": "2026-10-20T08:50:53.027Z"
   },
   {
+    "profile": "9-RO25",
+    "points": 3717,
+    "timestamp": "2026-10-20T08:50:54.095Z"
+  },
+  {
     "profile": "4-NG11",
     "points": 1606,
     "timestamp": "2026-10-20T08:51:12.381Z"
@@ -7803,5 +7808,10 @@
     "profile": "4-NG11",
     "points": 1777,
     "timestamp": "2026-10-21T10:45:45.468Z"
+  },
+  {
+    "profile": "9-RO25",
+    "points": 4066,
+    "timestamp": "2026-10-21T10:46:37.666Z"
   }
 ]
