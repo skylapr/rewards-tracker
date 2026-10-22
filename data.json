@@ -7855,6 +7855,11 @@
     "timestamp": "2026-10-21T10:46:28.119Z"
   },
   {
+    "profile": "3-TU06",
+    "points": 3510,
+    "timestamp": "2026-10-21T10:46:28.344Z"
+  },
+  {
     "profile": "9-RO25",
     "points": 4066,
     "timestamp": "2026-10-21T10:46:37.666Z"
@@ -7988,5 +7993,10 @@
     "profile": "4-NG11",
     "points": 1864,
     "timestamp": "2026-10-22T05:45:56.276Z"
+  },
+  {
+    "profile": "3-TU06",
+    "points": 3597,
+    "timestamp": "2026-10-22T05:46:16.278Z"
   }
 ]
