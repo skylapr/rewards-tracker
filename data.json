@@ -8035,6 +8035,11 @@
     "timestamp": "2026-10-22T05:46:49.273Z"
   },
   {
+    "profile": "2-PORT",
+    "points": 240,
+    "timestamp": "2026-10-22T05:47:06.230Z"
+  },
+  {
     "profile": "8-SITO",
     "points": 4797,
     "timestamp": "2026-10-22T05:47:17.008Z"
@@ -8060,6 +8065,11 @@
     "timestamp": "2026-10-22T05:48:06.502Z"
   },
   {
+    "profile": "2-PORT",
+    "points": 250,
+    "timestamp": "2026-10-22T05:48:14.479Z"
+  },
+  {
     "profile": "1-XU69",
     "points": 753,
     "timestamp": "2026-10-22T05:48:52.858Z"
@@ -8068,5 +8078,10 @@
     "profile": "7-SH69",
     "points": 4001,
     "timestamp": "2026-10-22T05:49:00.004Z"
+  },
+  {
+    "profile": "2-PORT",
+    "points": 253,
+    "timestamp": "2026-10-22T05:49:02.110Z"
   }
 ]
