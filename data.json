@@ -7870,6 +7870,11 @@
     "timestamp": "2026-10-21T10:46:37.939Z"
   },
   {
+    "profile": "10-FR83",
+    "points": 159,
+    "timestamp": "2026-10-21T10:46:59.998Z"
+  },
+  {
     "profile": "11-WE82",
     "points": 1742,
     "timestamp": "2026-10-21T10:47:07.336Z"
@@ -8033,5 +8038,10 @@
     "profile": "7-SH69",
     "points": 3991,
     "timestamp": "2026-10-22T05:47:39.224Z"
+  },
+  {
+    "profile": "10-FR83",
+    "points": 303,
+    "timestamp": "2026-10-22T05:47:46.289Z"
   }
 ]
