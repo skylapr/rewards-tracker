@@ -8170,6 +8170,11 @@
     "timestamp": "2026-10-22T06:07:53.180Z"
   },
   {
+    "profile": "17-TH5F",
+    "points": 2983,
+    "timestamp": "2026-10-22T06:07:53.297Z"
+  },
+  {
     "profile": "18-TEJ4",
     "points": 3102,
     "timestamp": "2026-10-22T06:08:10.446Z"
@@ -8333,5 +8338,10 @@
     "profile": "21-CC32",
     "points": 3909,
     "timestamp": "2026-10-23T06:16:06.168Z"
+  },
+  {
+    "profile": "17-TH5F",
+    "points": 3070,
+    "timestamp": "2026-10-23T06:16:25.175Z"
   }
 ]
