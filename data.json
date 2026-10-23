@@ -8360,6 +8360,11 @@
     "timestamp": "2026-10-23T06:16:53.175Z"
   },
   {
+    "profile": "12-TH14",
+    "points": 3122,
+    "timestamp": "2026-10-23T06:16:58.347Z"
+  },
+  {
     "profile": "15-TH7G",
     "points": 2916,
     "timestamp": "2026-10-23T06:17:08.015Z"
@@ -8380,8 +8385,18 @@
     "timestamp": "2026-10-23T06:17:52.882Z"
   },
   {
+    "profile": "12-TH14",
+    "points": 3132,
+    "timestamp": "2026-10-23T06:17:53.122Z"
+  },
+  {
     "profile": "13-LA36",
     "points": 3864,
     "timestamp": "2026-10-23T06:18:43.404Z"
+  },
+  {
+    "profile": "12-TH14",
+    "points": 3222,
+    "timestamp": "2026-10-23T06:19:50.422Z"
   }
 ]
