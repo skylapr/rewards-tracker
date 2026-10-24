@@ -8275,6 +8275,11 @@
     "timestamp": "2026-10-23T05:50:08.226Z"
   },
   {
+    "profile": "8-SITO",
+    "points": 4884,
+    "timestamp": "2026-10-23T05:50:09.626Z"
+  },
+  {
     "profile": "2-PORT",
     "points": 337,
     "timestamp": "2026-10-23T05:50:10.185Z"
@@ -8493,5 +8498,10 @@
     "profile": "10-FR83",
     "points": 591,
     "timestamp": "2026-10-24T02:11:14.902Z"
+  },
+  {
+    "profile": "8-SITO",
+    "points": 5115,
+    "timestamp": "2026-10-24T02:11:23.173Z"
   }
 ]
