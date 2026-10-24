@@ -8405,6 +8405,16 @@
     "timestamp": "2026-10-23T06:17:53.122Z"
   },
   {
+    "profile": "16-FA20",
+    "points": 807,
+    "timestamp": "2026-10-23T06:18:15.950Z"
+  },
+  {
+    "profile": "16-FA20",
+    "points": 810,
+    "timestamp": "2026-10-23T06:18:37.695Z"
+  },
+  {
     "profile": "13-LA36",
     "points": 3864,
     "timestamp": "2026-10-23T06:18:43.404Z"
@@ -8553,5 +8563,10 @@
     "profile": "13-LA36",
     "points": 3951,
     "timestamp": "2026-10-24T02:29:56.453Z"
+  },
+  {
+    "profile": "16-FA20",
+    "points": 951,
+    "timestamp": "2026-10-24T02:30:22.087Z"
   }
 ]
