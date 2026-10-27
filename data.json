@@ -8710,6 +8710,11 @@
     "timestamp": "2026-10-25T04:58:52.672Z"
   },
   {
+    "profile": "3-TU06",
+    "points": 4110,
+    "timestamp": "2026-10-25T04:59:04.596Z"
+  },
+  {
     "profile": "4-NG11",
     "points": 2503,
     "timestamp": "2026-10-25T04:59:15.747Z"
@@ -8723,6 +8728,11 @@
     "profile": "1-XU69",
     "points": 1268,
     "timestamp": "2026-10-25T04:59:22.596Z"
+  },
+  {
+    "profile": "3-TU06",
+    "points": 4336,
+    "timestamp": "2026-10-25T04:59:38.702Z"
   },
   {
     "profile": "9-RO25",
@@ -8878,5 +8888,10 @@
     "profile": "4-NG11",
     "points": 2677,
     "timestamp": "2026-10-27T11:19:56.736Z"
+  },
+  {
+    "profile": "3-TU06",
+    "points": 4423,
+    "timestamp": "2026-10-27T11:20:13.799Z"
   }
 ]
