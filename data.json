@@ -8935,6 +8935,11 @@
     "timestamp": "2026-10-27T11:20:44.727Z"
   },
   {
+    "profile": "3-TU06",
+    "points": 4520,
+    "timestamp": "2026-10-27T11:20:57.092Z"
+  },
+  {
     "profile": "2-PORT",
     "points": 859,
     "timestamp": "2026-10-27T11:21:07.798Z"
@@ -9098,5 +9103,10 @@
     "profile": "1-XU69",
     "points": 1855,
     "timestamp": "2026-10-29T09:13:30.390Z"
+  },
+  {
+    "profile": "3-TU06",
+    "points": 4607,
+    "timestamp": "2026-10-29T09:13:31.856Z"
   }
 ]
