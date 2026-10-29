@@ -8745,6 +8745,11 @@
     "timestamp": "2026-10-25T05:00:09.663Z"
   },
   {
+    "profile": "10-FR83",
+    "points": 780,
+    "timestamp": "2026-10-25T05:00:12.246Z"
+  },
+  {
     "profile": "2-PORT",
     "points": 685,
     "timestamp": "2026-10-25T05:00:12.641Z"
@@ -8955,6 +8960,11 @@
     "timestamp": "2026-10-27T11:21:22.795Z"
   },
   {
+    "profile": "10-FR83",
+    "points": 934,
+    "timestamp": "2026-10-27T11:21:29.465Z"
+  },
+  {
     "profile": "5-TU79",
     "points": 1786,
     "timestamp": "2026-10-27T11:21:29.730Z"
@@ -9143,5 +9153,10 @@
     "profile": "6-KHYS",
     "points": 1241,
     "timestamp": "2026-10-29T09:14:57.768Z"
+  },
+  {
+    "profile": "10-FR83",
+    "points": 1078,
+    "timestamp": "2026-10-29T09:15:14.309Z"
   }
 ]
