@@ -8915,6 +8915,11 @@
     "timestamp": "2026-10-27T11:20:29.016Z"
   },
   {
+    "profile": "1-XU69",
+    "points": 1682,
+    "timestamp": "2026-10-27T11:20:35.257Z"
+  },
+  {
     "profile": "9-RO25",
     "points": 4991,
     "timestamp": "2026-10-27T11:20:35.782Z"
@@ -9063,5 +9068,10 @@
     "profile": "17-TH5F",
     "points": 3792,
     "timestamp": "2026-10-27T11:53:46.335Z"
+  },
+  {
+    "profile": "1-XU69",
+    "points": 1768,
+    "timestamp": "2026-10-29T09:12:08.743Z"
   }
 ]
