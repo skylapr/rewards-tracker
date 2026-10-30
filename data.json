@@ -9440,6 +9440,11 @@
     "timestamp": "2026-10-30T10:09:47.018Z"
   },
   {
+    "profile": "12-TH14",
+    "points": 3893,
+    "timestamp": "2026-10-30T10:09:50.898Z"
+  },
+  {
     "profile": "21-CC32",
     "points": 4823,
     "timestamp": "2026-10-30T10:09:54.843Z"
@@ -9468,5 +9473,10 @@
     "profile": "15-TH7G",
     "points": 3821,
     "timestamp": "2026-10-30T10:10:41.584Z"
+  },
+  {
+    "profile": "12-TH14",
+    "points": 3923,
+    "timestamp": "2026-10-30T10:10:58.507Z"
   }
 ]
