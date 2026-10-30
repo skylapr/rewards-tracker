@@ -9350,6 +9350,11 @@
     "timestamp": "2026-10-30T09:50:57.952Z"
   },
   {
+    "profile": "8-SITO",
+    "points": 266,
+    "timestamp": "2026-10-30T09:51:10.897Z"
+  },
+  {
     "profile": "6-KHYS",
     "points": 1328,
     "timestamp": "2026-10-30T09:51:11.946Z"
@@ -9388,5 +9393,10 @@
     "profile": "9-RO25",
     "points": 5534,
     "timestamp": "2026-10-30T09:52:20.170Z"
+  },
+  {
+    "profile": "8-SITO",
+    "points": 353,
+    "timestamp": "2026-10-30T09:52:23.022Z"
   }
 ]
