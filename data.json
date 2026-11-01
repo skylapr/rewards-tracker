@@ -9715,6 +9715,11 @@
     "timestamp": "2026-10-31T04:50:43.301Z"
   },
   {
+    "profile": "17-TH5F",
+    "points": 4235,
+    "timestamp": "2026-10-31T04:50:49.989Z"
+  },
+  {
     "profile": "13-LA36",
     "points": 5048,
     "timestamp": "2026-10-31T04:50:50.182Z"
@@ -9903,5 +9908,10 @@
     "profile": "14-XU11",
     "points": 4648,
     "timestamp": "2026-11-01T09:39:31.625Z"
+  },
+  {
+    "profile": "17-TH5F",
+    "points": 4322,
+    "timestamp": "2026-11-01T09:39:39.774Z"
   }
 ]
