@@ -10190,6 +10190,11 @@
     "timestamp": "2026-11-02T11:43:33.227Z"
   },
   {
+    "profile": "17-TH5F",
+    "points": 5045,
+    "timestamp": "2026-11-02T11:43:37.947Z"
+  },
+  {
     "profile": "18-TEJ4",
     "points": 5234,
     "timestamp": "2026-11-02T11:43:40.152Z"
@@ -10328,5 +10333,10 @@
     "profile": "5-TU79",
     "points": 3358,
     "timestamp": "2026-11-03T10:37:17.486Z"
+  },
+  {
+    "profile": "17-TH5F",
+    "points": 5126,
+    "timestamp": "2026-11-03T10:58:11.773Z"
   }
 ]
