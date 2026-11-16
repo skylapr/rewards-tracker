@@ -11115,6 +11115,11 @@
     "timestamp": "2026-11-16T09:32:00.742Z"
   },
   {
+    "profile": "10-FR83",
+    "points": 4638,
+    "timestamp": "2026-11-16T09:32:00.749Z"
+  },
+  {
     "profile": "8-SITO",
     "points": 4936,
     "timestamp": "2026-11-16T09:32:05.975Z"
@@ -11168,5 +11173,10 @@
     "profile": "21-CC32",
     "points": 3033,
     "timestamp": "2026-11-16T09:33:24.500Z"
+  },
+  {
+    "profile": "10-FR83",
+    "points": 4715,
+    "timestamp": "2026-11-16T09:33:25.721Z"
   }
 ]
