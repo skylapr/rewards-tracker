@@ -11130,6 +11130,11 @@
     "timestamp": "2026-11-16T09:32:05.975Z"
   },
   {
+    "profile": "7-SH69",
+    "points": 3400,
+    "timestamp": "2026-11-16T09:32:08.733Z"
+  },
+  {
     "profile": "6-KHYS",
     "points": 5033,
     "timestamp": "2026-11-16T09:32:17.784Z"
@@ -11228,5 +11233,10 @@
     "profile": "11-WE82",
     "points": 908,
     "timestamp": "2026-11-16T09:34:30.737Z"
+  },
+  {
+    "profile": "7-SH69",
+    "points": 3487,
+    "timestamp": "2026-11-16T09:34:57.739Z"
   }
 ]
