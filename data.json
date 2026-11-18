@@ -11315,6 +11315,11 @@
     "timestamp": "2026-11-17T09:47:02.329Z"
   },
   {
+    "profile": "8-SITO",
+    "points": 5152,
+    "timestamp": "2026-11-17T09:47:05.331Z"
+  },
+  {
     "profile": "16-FA20",
     "points": 5252,
     "timestamp": "2026-11-17T09:47:11.341Z"
@@ -11493,5 +11498,10 @@
     "profile": "7-SH69",
     "points": 3854,
     "timestamp": "2026-11-18T11:14:42.977Z"
+  },
+  {
+    "profile": "8-SITO",
+    "points": 5239,
+    "timestamp": "2026-11-18T11:14:48.026Z"
   }
 ]
