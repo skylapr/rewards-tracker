@@ -11865,6 +11865,11 @@
     "timestamp": "2026-11-20T01:46:06.513Z"
   },
   {
+    "profile": "14-XU11",
+    "points": 3805,
+    "timestamp": "2026-11-20T01:46:07.968Z"
+  },
+  {
     "profile": "9-RO25",
     "points": 4497,
     "timestamp": "2026-11-20T01:46:09.544Z"
@@ -11948,5 +11953,10 @@
     "profile": "6-KHYS",
     "points": 5952,
     "timestamp": "2026-11-21T02:50:01.274Z"
+  },
+  {
+    "profile": "14-XU11",
+    "points": 3892,
+    "timestamp": "2026-11-21T02:50:07.391Z"
   }
 ]
