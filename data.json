@@ -12035,6 +12035,11 @@
     "timestamp": "2026-11-21T02:51:53.912Z"
   },
   {
+    "profile": "17-TH5F",
+    "points": 4350,
+    "timestamp": "2026-11-21T02:51:57.512Z"
+  },
+  {
     "profile": "14-XU11",
     "points": 4084,
     "timestamp": "2026-11-21T02:51:58.262Z"
@@ -12138,5 +12143,10 @@
     "profile": "3-TU06",
     "points": 4541,
     "timestamp": "2026-11-22T01:03:48.643Z"
+  },
+  {
+    "profile": "17-TH5F",
+    "points": 4440,
+    "timestamp": "2026-11-22T01:03:55.679Z"
   }
 ]
