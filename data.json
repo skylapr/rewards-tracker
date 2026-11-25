@@ -12135,6 +12135,11 @@
     "timestamp": "2026-11-25T11:05:53.011Z"
   },
   {
+    "profile": "9-RO25",
+    "points": 5472,
+    "timestamp": "2026-11-25T11:05:53.011Z"
+  },
+  {
     "profile": "6-KHYS",
     "points": 6763,
     "timestamp": "2026-11-25T11:05:54.110Z"
@@ -12153,5 +12158,10 @@
     "profile": "3-TU06",
     "points": 5147,
     "timestamp": "2026-11-25T11:06:22.959Z"
+  },
+  {
+    "profile": "9-RO25",
+    "points": 5484,
+    "timestamp": "2026-11-25T11:06:36.878Z"
   }
 ]
