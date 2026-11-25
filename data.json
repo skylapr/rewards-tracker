@@ -12120,9 +12120,19 @@
     "timestamp": "2026-11-25T11:05:30.154Z"
   },
   {
+    "profile": "2-PORT",
+    "points": 6614,
+    "timestamp": "2026-11-25T11:05:33.064Z"
+  },
+  {
     "profile": "7-SH69",
     "points": 5185,
     "timestamp": "2026-11-25T11:05:52.263Z"
+  },
+  {
+    "profile": "2-PORT",
+    "points": 6691,
+    "timestamp": "2026-11-25T11:05:53.011Z"
   },
   {
     "profile": "6-KHYS",
