@@ -12215,6 +12215,11 @@
     "timestamp": "2026-11-25T11:22:58.061Z"
   },
   {
+    "profile": "17-TH5F",
+    "points": 4944,
+    "timestamp": "2026-11-25T11:23:02.064Z"
+  },
+  {
     "profile": "14-TRN4",
     "points": 486,
     "timestamp": "2026-11-25T11:23:04.564Z"
@@ -12263,5 +12268,10 @@
     "profile": "16-FA20",
     "points": 6864,
     "timestamp": "2026-11-25T11:24:11.712Z"
+  },
+  {
+    "profile": "17-TH5F",
+    "points": 5031,
+    "timestamp": "2026-11-25T11:24:21.319Z"
   }
 ]
